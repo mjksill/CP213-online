@@ -3,7 +3,7 @@
 
 
 
-View on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mjksill/CP213-online.git/master)
+View on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=index.ipynb)
 
 
 
