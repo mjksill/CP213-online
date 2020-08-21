@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Mass and species balances</title>
+<meta name="author" content="(Leo Lue)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="../../reveal.js/dist/theme/beige.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<script src="../../reveal.js/plugin/zoom/zoom.js"></script>
+<script src="../../reveal.js/plugin/notes/notes.js"></script>
+<script src="../../reveal.js/plugin/search/search.js"></script>
+<script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+
+<script src="../../reveal.js-plugins/chalkboard/plugin.js"></script>
+
+<script src="../../reveal.js-plugins/audio-slideshow/plugin.js"></script>
+<script src="../../reveal.js-plugins/audio-slideshow/recorder.js"></script>
+<script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
+
+<section>
+<section id="slide-org258a60e">
+<h2 id="org258a60e">CP213: Applied mathematics and problem solving</h2>
+<h2>Mass and species balances</h2>
+<h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-org5923566">
+<h2 id="org5923566">Overview</h2>
+<ul>
+<li>Mass balances
+<ul>
+<li>Tank filling &amp; draining</li>
+<li>Convection</li>
+
+</ul></li>
+<li>Species balances</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+We start our discussion of balances with the mass balance.
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-orge5cfa0a">
+<h2 id="orge5cfa0a">Tank filling &amp; draining</h2>
+<div class="outline-text-2" id="text-orge5cfa0a">
+</div>
+</section>
+<section id="slide-org9b8a81b">
+<h3 id="org9b8a81b">Tank filling</h3>
+<p>
+Mass balance:
+</p>
+<div>
+\begin{align*}
+{\rm accumulation} 
+&= {\rm inflow} - {\rm outflow}
++ {\rm generation}
+\end{align*}
+
+</div>
+
+<aside class="notes">
+nil
+</aside>
+
+
+</section>
+<section id="slide-org876ead6">
+<h3 id="org876ead6">Determining the flow rate</h3>
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+Consider filling a tank with water at an unknown volumetric flow rate
+\(\dot{V}(t)\) from a tap, which could vary with time.  How can we
+determine the flow rate?
+</p>
+
+<p>
+A simple way to do this is to get a container and a stop watch.  We
+let the container fill with water for a certain period of time \(\Delta
+t\) (e.g., 30\,seconds).  We then measure the volume of liquid in the
+container after that period of time.
+</p>
+
+<p>
+We typically don't directly measure the volume of the liquid in
+the container.  Most of the time, we simply measure the height \(h\) of
+the liquid level.  If the inner cross sectional area \(A\) of the
+container is constant with respect to the height (e.g., the container
+is a cylinder), then the volume of water in the container is related
+to the height \(h\) of the liquid as
+</p>
+<div>
+\begin{align*}
+V &= A h
+.
+\end{align*}
+
+</div>
+
+</aside>
+
+</section>
+<section id="slide-orgc17773d">
+<h3 id="orgc17773d">Time varying measurement</h3>
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+If we think a little harder, we can be a bit more sophisticated than
+this.  We can use our phone to make a video of the filling of the
+container with time.  We can then plot the measured height of the
+water level in the tank a different instants in time.  
+</p>
+
+<p>
+If the flow rate from the tap is constant, then these points should
+lie on a a straight line.  The slope of this line will be the speed at
+which the water.
+</p>
+
+<p>
+That is
+</p>
+<div>
+\begin{align*}
+\dot{V} &=  A \frac{h(t+\Delta t)-h(t)}{\Delta t}
+\end{align*}
+
+</div>
+
+
+<p>
+What will happen if the flow rate from the tap \(\dot{V}\) is not
+constant?  As we noted in the case of a constant flow rate, the
+variation of the height with time is a straight line, and so the slope
+is constant.  If the flow rate varies with time, then data points will
+no longer lie on a straight line, but on a more general curve.
+</p>
+
+<p>
+In this case, we can still estimate the flow rate at a particular
+time \(t\) by 
+</p>
+<div>
+\begin{align*}
+\dot{V} &\approx  A \frac{h(t+\Delta t)-h(t)}{\Delta t}
+\end{align*}
+
+</div>
+
+</aside>
+
+</section>
+<section id="slide-orgfd5074b">
+<h3 id="orgfd5074b">Determining the water level</h3>
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+Now let's think of the problem in the reverse direction.  We now have
+a flow meter that gives us the volumetric flow rate \(\dot{V}(t)\) of
+water with time.  Now we ask the question "How does the water level in
+the tank vary with time?".
+</p>
+
+<p>
+If we assume that the volumetric flow rate is constant, then we have
+</p>
+<div>
+\begin{align*}
+A[h(t)-h(0)] &=  + \dot{V} t
+\\
+h(t) &= h(0) + \frac{\dot{V}}{A} t
+\end{align*}
+
+</div>
+<p>
+More generally, we can write how the height of the water level changes
+between a time interval \(\Delta t\) as
+</p>
+<div>
+\begin{align*}
+h(t+\delta t) &= h(t) + \frac{\dot{V}}{A}\Delta t
+\end{align*}
+
+</div>
+
+<p>
+We can plot \(\dot{V}/A\) with time
+</p>
+
+<p>
+What happen
+</p>
+
+
+
+<p>
+How might
+</p>
+
+<p>
+The rate of
+</p>
+
+<div>
+\begin{align*}
+\frac{dV}{dt}
+\end{align*}
+
+</div>
+
+</aside>
+
+</section>
+<section id="slide-org8c23f25">
+<h3 id="org8c23f25">Tank drainage</h3>
+<aside class="notes">
+<p>
+
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org8518738">
+<h3 id="org8518738"></h3>
+<aside class="notes">
+<p>
+
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org662408a">
+<h3 id="org662408a">Combining draining and filling</h3>
+<p>
+Mass balance:
+</p>
+<div>
+\begin{align*}
+{\rm accumulation} 
+&= {\rm inflow} - {\rm outflow}
++ {\rm generation}
+\end{align*}
+
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org7f15fcf">
+<h2 id="org7f15fcf">Species balance</h2>
+</section>
+</section>
+<section>
+<section id="slide-orgd93cbf7">
+<h2 id="orgd93cbf7">Summary</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="../../reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+width:1200, height:800, rolling_links:true, keyboard:true, overview:true,
+plugins: [RevealChalkboard, RevealAudioSlideshow, RevealAudioRecorder],
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+]
+,chalkboard: { src: "chalkboard.json", }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'audio/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: true, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: false, },});
+</script>
+</body>
+</html>

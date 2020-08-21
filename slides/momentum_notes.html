@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Momentum/force balances</title>
+<meta name="author" content="(Leo Lue)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="../../reveal.js/dist/theme/beige.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<script src="../../reveal.js/plugin/zoom/zoom.js"></script>
+<script src="../../reveal.js/plugin/notes/notes.js"></script>
+<script src="../../reveal.js/plugin/search/search.js"></script>
+<script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+
+<script src="../../reveal.js-plugins/chalkboard/plugin.js"></script>
+
+<script src="../../reveal.js-plugins/audio-slideshow/plugin.js"></script>
+<script src="../../reveal.js-plugins/audio-slideshow/recorder.js"></script>
+<script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
+
+<section>
+<section id="slide-orgee8c99c">
+<h2 id="orgee8c99c">CP213: Applied mathematics and problem solving</h2>
+<h2>Mass and species balances</h2>
+<h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-orgf7bb009">
+<h2 id="orgf7bb009">Overview</h2>
+</section>
+</section>
+<section>
+<section id="slide-org01571e8">
+<h2 id="org01571e8">Mass on an inclined plane</h2>
+<ul>
+<li>gravity</li>
+<li>friction</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc87300a">
+<h2 id="orgc87300a">car moving uphill</h2>
+<ul>
+<li>work performed by a force</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org002c49f">
+<h2 id="org002c49f">pressure on a dam</h2>
+</section>
+</section>
+<section>
+<section id="slide-org42d69ce">
+<h2 id="org42d69ce">car</h2>
+</section>
+</section>
+<section>
+<section id="slide-org0e5b3a1">
+<h2 id="org0e5b3a1">Summary</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="../../reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+width:1200, height:800, rolling_links:true, keyboard:true, overview:true,
+plugins: [RevealChalkboard, RevealAudioSlideshow, RevealAudioRecorder],
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+]
+,chalkboard: { src: "chalkboard.json", }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'audio/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: 0, autoplay: false, defaultDuration: 5, defaultAudios: true, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: false, },});
+</script>
+</body>
+</html>
