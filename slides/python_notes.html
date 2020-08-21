@@ -46,8 +46,8 @@
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
 <section>
-<section id="slide-orgdf0cb2f">
-<h2 id="orgdf0cb2f">CP213: Applied mathematics and problem solving</h2>
+<section id="slide-org63d525e">
+<h2 id="org63d525e">CP213: Applied mathematics and problem solving</h2>
 <h2>Python and its applications</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
@@ -140,8 +140,8 @@ to as far you want to go.
 </section>
 </section>
 <section>
-<section id="slide-org089a662">
-<h2 id="org089a662">Overview</h2>
+<section id="slide-org01c4d82">
+<h2 id="org01c4d82">Overview</h2>
 <ul class="fragment data-audio-src hello">
 <li>Basic elements of the language</li>
 <li>CP101 worked examples and tutorial problems</li>
@@ -150,16 +150,16 @@ to as far you want to go.
 
 
 </section>
-<section id="slide-org6c2feaa">
-<h3 id="org6c2feaa">Python</h3>
+<section id="slide-org981140b">
+<h3 id="org981140b">Python</h3>
 <p class="fragment" data-audio-text="This is a test.">
 </p>
 
 
 
 </section>
-<section id="slide-orgff3d845">
-<h3 id="orgff3d845">Jupyter notebooks</h3>
+<section id="slide-org703599d">
+<h3 id="org703599d">Jupyter notebooks</h3>
 <aside class="notes">
 <p>
 
@@ -172,19 +172,19 @@ We will implement this using Jupyter notebooks.
 </aside>
 
 </section>
-<section id="slide-org738b911">
-<h3 id="org738b911">Installation</h3>
+<section id="slide-org0a15b90">
+<h3 id="org0a15b90">Installation</h3>
 
 </section>
 </section>
 <section>
-<section id="slide-org9303860">
-<h2 id="org9303860">Basics</h2>
-<div class="outline-text-2" id="text-org9303860">
+<section id="slide-org1993974">
+<h2 id="org1993974">Basics</h2>
+<div class="outline-text-2" id="text-org1993974">
 </div>
 </section>
-<section id="slide-org066ccaf">
-<h3 id="org066ccaf">Python as a calculator</h3>
+<section id="slide-org3ccf521">
+<h3 id="org3ccf521">Python as a calculator</h3>
 <div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eraiBe2SiEk?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <!---video height="500" controls>
@@ -194,15 +194,15 @@ We will implement this using Jupyter notebooks.
 
 <div>
 Please see the
-<a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python-calculator.ipynb">
+<a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_calculator.ipynb">
 Jupyter notebook
 </a>
 for more details.
 </div>
 
 </section>
-<section id="slide-orgff6b7fa">
-<h3 id="orgff6b7fa">variables</h3>
+<section id="slide-orgb3c61c0">
+<h3 id="orgb3c61c0">variables</h3>
 <ul>
 <li>integers</li>
 <li>floats</li>
@@ -213,8 +213,8 @@ for more details.
 </ul>
 
 </section>
-<section id="slide-org1cda1cc">
-<h3 id="org1cda1cc">Example using variables</h3>
+<section id="slide-org9a41ce0">
+<h3 id="org9a41ce0">Example using variables</h3>
 <div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/16Yaz4oIkhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <!---video height="500" controls>
@@ -224,7 +224,7 @@ for more details.
 
 <div>
 Please see the
-<a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python-variables.ipynb">
+<a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_variables.ipynb">
 Jupyter notebook
 </a>
 for more details.
@@ -232,11 +232,11 @@ for more details.
 
 
 </section>
-<section id="slide-org1bb21b2">
-<h3 id="org1bb21b2">Strings</h3>
+<section id="slide-org16d131e">
+<h3 id="org16d131e">Strings</h3>
 </section>
-<section id="slide-orgec7f58e">
-<h3 id="orgec7f58e">printing</h3>
+<section id="slide-orgafb0678">
+<h3 id="orgafb0678">printing</h3>
 <p>
 print('Hello')
 </p>
@@ -246,8 +246,8 @@ nil
 </aside>
 
 </section>
-<section id="slide-orgb988844">
-<h3 id="orgb988844">Lists</h3>
+<section id="slide-orgced3695">
+<h3 id="orgced3695">Lists</h3>
 <ul>
 <li>comprehensions</li>
 <li>indexing
@@ -287,27 +287,19 @@ x_list.append(137.0)
 </div>
 
 </section>
-<section id="slide-orgf6db733">
-<h3 id="orgf6db733">Dictionaries</h3>
-<div class="org-src-container">
-
-<pre  class="src src-python"><code trim>
-<span style="color: #eedd82;">x_dict</span> = {<span style="color: #ffa07a;">'A'</span>:1.0, <span style="color: #ffa07a;">'B'</span>:17.0, <span style="color: #ffa07a;">'C'</span>:<span style="color: #ffa07a;">'asdf'</span>}
-<span style="color: #00ffff;">print</span>(x_dict)
-<span style="color: #00ffff;">print</span>(x_dict[<span style="color: #ffa07a;">'A'</span>])
-
-<span style="color: #eedd82;">x_dict</span>[7] = <span style="color: #ffa07a;">'seven'</span>
-<span style="color: #00ffff;">print</span>(x_dict)
-
-
-
-</code></pre>
+<section id="slide-org60273d9">
+<h3 id="org60273d9">Dictionaries</h3>
+<div>
+Please see the
+<a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_dictionaries.ipynb">
+Jupyter notebook
+</a>
+for more details.
 </div>
 
-
 </section>
-<section id="slide-orga8bea25">
-<h3 id="orga8bea25">loops</h3>
+<section id="slide-org4f5681a">
+<h3 id="org4f5681a">loops</h3>
 <p>
 One of the most important aspects of computers is the ability to do
 repetitive tasks.  
@@ -315,23 +307,31 @@ repetitive tasks.
 
 
 </section>
-<section id="slide-orga62d73c">
-<h3 id="orga62d73c">Functions</h3>
-<p>
-Often, we find that we 
-</p>
-
-<p>
-The key
-</p>
-
-</section>
-<section id="slide-org1b7007e">
-<h3 id="org1b7007e">Conditionals</h3>
+<section id="slide-org10e1e69">
+<h3 id="org10e1e69">Functions</h3>
+<div>
+Please see the
+<a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_functions.ipynb">
+Jupyter notebook
+</a>
+for more details.
+</div>
 
 </section>
-<section id="slide-org04b6971">
-<h3 id="org04b6971">Heat capacity of ideal gases: Shomate equation</h3>
+<section id="slide-orgda3be9d">
+<h3 id="orgda3be9d">Conditionals</h3>
+<div>
+Please see the
+<a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_conditionals.ipynb">
+Jupyter notebook
+</a>
+for more details.
+</div>
+
+
+</section>
+<section id="slide-org3f26477">
+<h3 id="org3f26477">Heat capacity of ideal gases: Shomate equation</h3>
 <aside class="notes">
 <p>
 
@@ -406,8 +406,8 @@ temperatures.
 </section>
 </section>
 <section>
-<section id="slide-org45c2f71">
-<h2 id="org45c2f71">Importing libraries</h2>
+<section id="slide-org0cc1e65">
+<h2 id="org0cc1e65">Importing libraries</h2>
 <ul>
 <li>numpy</li>
 <li>scipy</li>
@@ -415,6 +415,16 @@ temperatures.
 <li>sympy</li>
 
 </ul>
+
+<div>
+Please see the
+<a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_imports.ipynb">
+Jupyter notebook
+</a>
+for more details.
+</div>
+
+
 
 <aside class="notes">
 <p>
@@ -424,8 +434,8 @@ There are a lo
 </aside>
 
 </section>
-<section id="slide-org330dd90">
-<h3 id="org330dd90">numpy</h3>
+<section id="slide-org70ef6dd">
+<h3 id="org70ef6dd">numpy</h3>
 <ul>
 <li>mathematical functions
 <ul>
@@ -456,8 +466,8 @@ from Python.  For example, if you want to take the sine of a
 </aside>
 
 </section>
-<section id="slide-orgad69d13">
-<h3 id="orgad69d13">importing numpy</h3>
+<section id="slide-orgea328fb">
+<h3 id="orgea328fb">importing numpy</h3>
 <div class="org-src-container">
 
 <pre  class="src src-python"><code trim><span style="color: #00ffff;">import</span> numpy
@@ -485,8 +495,8 @@ within your program.
 </aside>
 
 </section>
-<section id="slide-orgc77784f">
-<h3 id="orgc77784f">matplotlib / pylab</h3>
+<section id="slide-orgbfbdb76">
+<h3 id="orgbfbdb76">matplotlib / pylab</h3>
 <div class="org-src-container">
 
 <pre  class="src src-python"><code trim><span style="color: #00ffff;">import</span> numpy <span style="color: #00ffff;">as</span> np
@@ -509,8 +519,8 @@ nil
 </aside>
 
 </section>
-<section id="slide-orgf8b82ed">
-<h3 id="orgf8b82ed">scipy</h3>
+<section id="slide-orgd37db0a">
+<h3 id="orgd37db0a">scipy</h3>
 <ul>
 <li>root finders</li>
 <li>non-linear equation solver: <code>fsolve</code></li>
@@ -521,8 +531,8 @@ nil
 
 
 </section>
-<section id="slide-orgb1fefeb">
-<h3 id="orgb1fefeb">sympy</h3>
+<section id="slide-orga51c43a">
+<h3 id="orga51c43a">sympy</h3>
 <ul>
 <li>symbolic algebra</li>
 <li>differentiation</li>
@@ -537,8 +547,8 @@ nil
 </aside>
 
 </section>
-<section id="slide-org1af50e7">
-<h3 id="org1af50e7">sympy</h3>
+<section id="slide-orgf24ed0c">
+<h3 id="orgf24ed0c">sympy</h3>
 <div class="org-src-container">
 
 <pre  class="src src-python"><code trim>
@@ -551,16 +561,16 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-orgf8afbc0">
-<h2 id="orgf8afbc0">Further resources</h2>
+<section id="slide-orgf35e7e2">
+<h2 id="orgf35e7e2">Further resources</h2>
 
 
 
 </section>
 </section>
 <section>
-<section id="slide-org4993134">
-<h2 id="org4993134">Summary</h2>
+<section id="slide-orgead96f9">
+<h2 id="orgead96f9">Summary</h2>
 </section>
 </section>
 </div>
