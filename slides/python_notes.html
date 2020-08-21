@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Python and its applications</title>
+<meta name="author" content="(Leo Lue)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="../../reveal.js/dist/theme/beige.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<script src="../../reveal.js/plugin/zoom/zoom.js"></script>
+<script src="../../reveal.js/plugin/notes/notes.js"></script>
+<script src="../../reveal.js/plugin/search/search.js"></script>
+<script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+
+<script src="../../reveal.js-plugins/menu/menu.js"></script>
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
+
+
+<script src="../../reveal.js-plugins/chalkboard/plugin.js"></script>
+
+
+
+<script src="../../reveal.js-plugins/audio-slideshow/plugin.js"></script>
+<script src="../../reveal.js-plugins/audio-slideshow/recorder.js"></script>
+<script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
+
+<section>
+<section id="slide-orga5de7e1">
+<h2 id="orga5de7e1">CP213: Applied mathematics and problem solving</h2>
+<h2>Python and its applications</h2>
+<h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
+
+<p class="fragment" data-audio-src="python/title.mp3">
+</p>
+
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+Welcome to CP213.  In this lecture, we will give a very basic
+introduction to the Python programming language and apply it some
+simple chemical engineering problems.
+</p>
+
+<p>
+Python is a powerful programming language that is&#x2026; widely used across
+many fields and industries.  
+</p>
+
+<p>
+Many employers are actively seeking programmers experience in Python
+for
+</p>
+
+<p>
+It is open source and it can be freely downloaded and installed on
+almost any computer.  If you are interested in installing it in your
+computer, please see the Anaconda distribution at this link&#x2026;
+</p>
+
+<p>
+One of its great advantages is that there are many freely available
+software libraries that can be downloaded and used that numerical
+methods (e.g., numpy), optimization (e.g., pyomo), machine learning
+(e.g., pytorch, scikit-learn, tensor-flow), thermodynamics and
+reaction engineering (e.g., Cantera), and data handling (e.g., Pandas)
+as well as
+</p>
+
+<p>
+The beauty of Python is that once you learn some of its basic concepts, you can
+easily get started in using any of these software libraries to develop
+applications
+</p>
+
+<p>
+There is a large open source community that actively develop and
+contribute codes for others to freely use.
+</p>
+
+<p>
+This module will give an introduction to Python.
+</p>
+
+<p>
+Python is an extremely powerful programming language, 
+which allows the
+</p>
+
+<p>
+&#x2026;implementation of s with many subtleties.  However, it is also
+extremely flexible, and lends itself to many different programming
+styles (e.g., procedural, object oriented, functional, etc.)
+</p>
+
+<p>
+, consequently, it can be used
+on many different levels.
+</p>
+
+<p>
+In this module, we will start using Python as a simple calculator that
+</p>
+
+
+<p>
+We will leave it to you to push your exploration and learning of Python
+to as far you want to go.
+</p>
+
+</aside>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org938da52">
+<h2 id="org938da52">Overview</h2>
+<ul class="fragment data-audio-src hello">
+<li>Basic elements of the language</li>
+<li>CP101 worked examples and tutorial problems</li>
+
+</ul>
+
+
+</section>
+<section id="slide-org1fe018a">
+<h3 id="org1fe018a">Python</h3>
+<p class="fragment" data-audio-text="This is a test.">
+</p>
+
+
+
+</section>
+<section id="slide-org996b356">
+<h3 id="org996b356">Jupyter notebooks</h3>
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+We will implement this using Jupyter notebooks.
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org1f1ed11">
+<h3 id="org1f1ed11">Installation</h3>
+
+</section>
+</section>
+<section>
+<section id="slide-org0b212e1">
+<h2 id="org0b212e1">Basics</h2>
+<div class="outline-text-2" id="text-org0b212e1">
+</div>
+</section>
+<section id="slide-orgc2ed540">
+<h3 id="orgc2ed540">Python as a calculator</h3>
+<div>
+<video height="500" controls>
+<source  src="../recordings/python-calculator.mp4" type="video/mp4" />
+</video>
+</div>
+
+<div>
+Please see the
+<a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python-calculator.ipynb">
+Jupyter notebook
+</a>
+for more details.
+</div>
+
+</section>
+<section id="slide-orgbe56bdf">
+<h3 id="orgbe56bdf">variables</h3>
+<ul>
+<li>integers</li>
+<li>floats</li>
+<li>strings</li>
+<li>lists</li>
+<li>dictionaries</li>
+
+</ul>
+
+</section>
+<section id="slide-org2e7486c">
+<h3 id="org2e7486c">Example using variables</h3>
+<div>
+<video height="500" controls>
+<source  src="../recordings/python-variables.mp4" type="video/mp4" />
+</video>
+</div>
+
+<div>
+Please see the
+<a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python-variables.ipynb">
+Jupyter notebook
+</a>
+for more details.
+</div>
+
+
+</section>
+<section id="slide-orgfe16025">
+<h3 id="orgfe16025">Strings</h3>
+</section>
+<section id="slide-orge050d87">
+<h3 id="orge050d87">printing</h3>
+<p>
+print('Hello')
+</p>
+
+<aside class="notes">
+nil
+</aside>
+
+</section>
+<section id="slide-org3072fd4">
+<h3 id="org3072fd4">Lists</h3>
+<ul>
+<li>comprehensions</li>
+<li>indexing
+<ul>
+<li>retrieving</li>
+<li>slicing</li>
+
+</ul></li>
+
+</ul>
+
+<div class="org-src-container">
+
+<pre  class="src src-python"><code trim>
+<span style="color: #eedd82;">x_list</span> = [<span style="color: #ffa07a;">'hello'</span>, <span style="color: #ffa07a;">'good bye'</span>, 1.2, 5]
+
+<span style="color: #00ffff;">print</span>(x_list[2])
+<span style="color: #00ffff;">print</span>(x_list[0])
+<span style="color: #00ffff;">print</span>(x_list[-1])
+
+x_list.append(137.0)
+
+<span style="color: #00ffff;">print</span>(x_list)
+
+<span style="color: #00ffff;">print</span>(x_list[1:2])
+<span style="color: #00ffff;">print</span>(x_list[1:3])
+<span style="color: #00ffff;">print</span>(x_list[:2])
+<span style="color: #00ffff;">print</span>(x_list[2:])
+
+<span style="color: #eedd82;">y_list</span> = [x*x <span style="color: #00ffff;">for</span> x <span style="color: #00ffff;">in</span> <span style="color: #b0c4de;">range</span>(5)]
+<span style="color: #00ffff;">print</span>(y_list)
+
+<span style="color: #eedd82;">x_list</span>[3] = 2
+<span style="color: #00ffff;">print</span>(x_list)
+
+</code></pre>
+</div>
+
+</section>
+<section id="slide-org683ac4d">
+<h3 id="org683ac4d">Dictionaries</h3>
+<div class="org-src-container">
+
+<pre  class="src src-python"><code trim>
+<span style="color: #eedd82;">x_dict</span> = {<span style="color: #ffa07a;">'A'</span>:1.0, <span style="color: #ffa07a;">'B'</span>:17.0, <span style="color: #ffa07a;">'C'</span>:<span style="color: #ffa07a;">'asdf'</span>}
+<span style="color: #00ffff;">print</span>(x_dict)
+<span style="color: #00ffff;">print</span>(x_dict[<span style="color: #ffa07a;">'A'</span>])
+
+<span style="color: #eedd82;">x_dict</span>[7] = <span style="color: #ffa07a;">'seven'</span>
+<span style="color: #00ffff;">print</span>(x_dict)
+
+
+
+</code></pre>
+</div>
+
+
+</section>
+<section id="slide-orga870485">
+<h3 id="orga870485">loops</h3>
+<p>
+One of the most important aspects of computers is the ability to do
+repetitive tasks.  
+</p>
+
+
+</section>
+<section id="slide-orgbe57e18">
+<h3 id="orgbe57e18">Functions</h3>
+<p>
+Often, we find that we 
+</p>
+
+<p>
+The key
+</p>
+
+</section>
+<section id="slide-org4494f98">
+<h3 id="org4494f98">Conditionals</h3>
+
+</section>
+<section id="slide-org06d4fe5">
+<h3 id="org06d4fe5">Heat capacity of ideal gases: Shomate equation</h3>
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+<a href="../notebooks/shomate.ipynb">see notebook</a>
+</p>
+
+<p>
+Often, we encounter a situation when the actual code we need to
+execute depends on some condition.
+</p>
+
+<p>
+As an example, let's look at the heat capacity of nitrogen gas.
+</p>
+
+<ul>
+<li><a href="https://webbook.nist.gov/cgi/cbook.cgi?ID=C7727379&amp;Type=JANAFG&amp;Table=on#JANAFG">data for nitrogen</a></li>
+
+</ul>
+
+<p>
+As an example, the vapor pressure of a fluid is often reported using
+the Antoine equation with a set of specific values for the
+coefficients which depend on the particular fluid.  The value of these
+coefficients are typically only valid over a specific range of
+temperatures.
+</p>
+
+</aside>
+
+<div class="org-src-container">
+
+<pre  class="src src-python"><code trim>
+<span style="color: #00ffff;">def</span> <span style="color: #87cefa;">get_Cp</span>(T):
+
+    <span style="color: #00ffff;">if</span> (T &gt;= 100.0 <span style="color: #00ffff;">and</span> T &lt;= 500.0):
+        <span style="color: #eedd82;">A</span> =  28.98641
+        <span style="color: #eedd82;">B</span> =  1.853978
+        <span style="color: #eedd82;">C</span> = -9.647459
+        <span style="color: #eedd82;">D</span> =  16.63537
+        <span style="color: #eedd82;">E</span> =  0.000117
+    <span style="color: #00ffff;">elif</span> (T &gt; 500.0 <span style="color: #00ffff;">and</span> T &lt;= 2000.0):
+        <span style="color: #eedd82;">A</span> =  19.50583
+        <span style="color: #eedd82;">B</span> =  19.88705
+        <span style="color: #eedd82;">C</span> = -8.598535
+        <span style="color: #eedd82;">D</span> =  1.369784
+        <span style="color: #eedd82;">E</span> =  0.527601
+    <span style="color: #00ffff;">elif</span> (T &gt; 2000.0 <span style="color: #00ffff;">and</span> T &lt;= 6000.0):
+        <span style="color: #eedd82;">A</span> =  35.51872
+        <span style="color: #eedd82;">B</span> =  1.128728
+        <span style="color: #eedd82;">C</span> = -0.196103
+        <span style="color: #eedd82;">D</span> =  0.014662
+        <span style="color: #eedd82;">E</span> = -4.553760
+    <span style="color: #00ffff;">else</span>:
+        <span style="color: #00ffff;">print</span>(<span style="color: #ffa07a;">'error: Temperature out of range'</span>)
+        <span style="color: #7fffd4;">exit</span>()
+
+    <span style="color: #eedd82;">t</span> = T / 1000.0
+    <span style="color: #eedd82;">Cp</span> = A + B*t + C*t**2 + D*t**3 + E / t**2
+
+    <span style="color: #00ffff;">return</span> Cp
+
+<span style="color: #00ffff;">print</span>(get_Cp(5000.0))
+
+</code></pre>
+</div>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org6fae365">
+<h2 id="org6fae365">Importing libraries</h2>
+<ul>
+<li>numpy</li>
+<li>scipy</li>
+<li>matplotlib</li>
+<li>sympy</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+There are a lo
+</p>
+
+</aside>
+
+</section>
+<section id="slide-orgd5c24b0">
+<h3 id="orgd5c24b0">numpy</h3>
+<ul>
+<li>mathematical functions
+<ul>
+<li>trigonometric</li>
+<li>exponential and logarithmic</li>
+
+</ul></li>
+<li>random number generators</li>
+<li>constants (e.g., \(\pi\), \(e\))</li>
+<li>matrix and vector calculations</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+Previously, we mentioned that Python can be used as a substitute for a
+calculator.  With what has been covered so far, this is not entirely
+true.  Modern calculators can evaluate special functions, such as
+logarithms, exponentials, trigonometric functions (e.g., sine, cosine,
+and tangent), as well as many others.  These functions are missing
+from Python.  For example, if you want to take the sine of a 
+</p>
+
+</aside>
+
+</section>
+<section id="slide-org499a457">
+<h3 id="org499a457">importing numpy</h3>
+<div class="org-src-container">
+
+<pre  class="src src-python"><code trim><span style="color: #00ffff;">import</span> numpy
+
+<span style="color: #00ffff;">import</span> numpy <span style="color: #00ffff;">as</span> np
+
+<span style="color: #00ffff;">from</span> numpy <span style="color: #00ffff;">import</span> *
+
+<span style="color: #00ffff;">from</span> numpy <span style="color: #00ffff;">import</span> pi
+
+</code></pre>
+</div>
+
+<aside class="notes">
+<p>
+There are multiple manners in which to import a library.  
+</p>
+
+<p>
+The first manner is to write "import numpy".  In this case, all the
+functions within the main library are loaded and can be accessed from
+within your program.
+</p>
+
+</aside>
+
+</section>
+<section id="slide-orga152be7">
+<h3 id="orga152be7">matplotlib / pylab</h3>
+<div class="org-src-container">
+
+<pre  class="src src-python"><code trim><span style="color: #00ffff;">import</span> numpy <span style="color: #00ffff;">as</span> np
+<span style="color: #00ffff;">import</span> pylab <span style="color: #00ffff;">as</span> plt
+
+<span style="color: #eedd82;">x_data</span> = np.arange(0.0, 1.0, 0.01)
+<span style="color: #eedd82;">y_data</span> = [np.sin(x) <span style="color: #00ffff;">for</span> x <span style="color: #00ffff;">in</span> x_data]
+
+
+
+plt.show()
+
+</code></pre>
+</div>
+
+
+
+<aside class="notes">
+nil
+</aside>
+
+</section>
+<section id="slide-orgf71e50b">
+<h3 id="orgf71e50b">scipy</h3>
+<ul>
+<li>root finders</li>
+<li>non-linear equation solver: <code>fsolve</code></li>
+<li>numerical integration: <code>quad</code></li>
+<li>numerical solvers for coupled differential equations: <code>odeint</code></li>
+
+</ul>
+
+
+</section>
+<section id="slide-org6f89ff1">
+<h3 id="org6f89ff1">sympy</h3>
+<ul>
+<li>symbolic algebra</li>
+<li>differentiation</li>
+<li>integration</li>
+<li>solution</li>
+
+</ul>
+
+
+<aside class="notes">
+nil
+</aside>
+
+</section>
+<section id="slide-org557db42">
+<h3 id="org557db42">sympy</h3>
+<div class="org-src-container">
+
+<pre  class="src src-python"><code trim>
+<span style="color: #00ffff;">import</span> 
+
+</code></pre>
+</div>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org5eba8b9">
+<h2 id="org5eba8b9">Further resources</h2>
+
+
+
+</section>
+</section>
+<section>
+<section id="slide-org5834284">
+<h2 id="org5834284">Summary</h2>
+</section>
+</section>
+</div>
+</div>
+<script src="../../reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+width:1200, height:800, rolling_links:true, keyboard:true, overview:true,
+plugins: [ RevealMarkdown, RevealMenu, RevealChalkboard, RevealAudioSlideshow, RevealAudioRecorder],
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+]
+,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'Plugins', icon: '<i class="fa fa-external-link-alt"></i>', src: 'toc.html' }, { title: 'About', icon: '<i class="fa fa-info"></i>', src: 'about.html' } ] }, chalkboard: { src: "chalkboard.json", }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'python/', suffix: '.ogg', textToSpeechURL: "http://api.voicerss.org/?key=f6810d3ff6e84980b30a10c447b36003&hl=eng-us&c=ogg&src=", defaultNotes: true, defaultText: false, advance: 0, autoplay: true, defaultDuration: 5, defaultAudios: true, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: false, },});
+</script>
+</body>
+</html>
