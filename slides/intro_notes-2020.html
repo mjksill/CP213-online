@@ -34,43 +34,7 @@
 <script src="../../reveal.js/plugin/search/search.js"></script>
 <script src="../../reveal.js/plugin/markdown/markdown.js"></script>
 <!---script src="../../reveal.js/plugin/highlight/highlight.js"></script--->
-<script>
-function showCaptions() {
-  var captionWindow = window.open("", "myWindow", "width=500, height=500")
-
-  var element = document.getElementsByClassName("notes");
-  for (var i=0; i<element.length; i++) {
-    console.log(i)
-    var slide = element[i].parentElement
-    console.log(slide)
-    var title = slide.getElementsByTagName("h2")
-    var titleText
-    if (title.length > 0) {
-       titleText = title[0].textContent;
-    } else {
-       titleText = slide.getElementsByTagName("h3")[0].textContent
-    }
-    
-    console.log(title.textContent)
-
-    var text = element[i].innerHTML;
-
-    captionWindow.document.write("<h2>")
-    captionWindow.document.write(titleText)
-    captionWindow.document.write("</h2>")
-    captionWindow.document.write("<div>")
-    captionWindow.document.write(text)
-    captionWindow.document.write("</div>")
-  }
-}
-
-function hideCaptions() {
-  var element = document.getElementsByClassName("caption");
-  for (var i=0; i<element.length; i++) {
-    element[i].style.display = "none";
-  }
-}
-</script>
+<script src="./captions.js"></script>
 
 <script src="../../reveal.js-plugins/menu/menu.js"></script>
 <link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
@@ -84,11 +48,12 @@ function hideCaptions() {
 
 
 <section>
-<section id="slide-org728781c" data-audio-src="intro/title.ogg">
-<h2 id="org728781c">CP213: Applied mathematics and problem solving</h2>
+<section id="slide-orge26edcd">
+<h2 id="orge26edcd">CP213: Applied mathematics and problem solving</h2>
 <h2>Module overview</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
+<p class="fragment" data-audio-src="intro/title.ogg"></p>
 
 <button onclick="showCaptions()"><i class="fa fa-closed-captioning"></i></button>
 
@@ -110,8 +75,8 @@ of the module aims and contents.
 </section>
 </section>
 <section>
-<section id="slide-org4d22eb5" data-audio-src="intro/overview.ogg">
-<h2 id="org4d22eb5">Overview</h2>
+<section id="slide-org0c42dc0" data-audio-src="intro/overview.ogg">
+<h2 id="org0c42dc0">Overview</h2>
 <ul>
 <li>Module leader: Leo Lue &amp; Abdul Sharif</li>
 <li>Demonstrators: Chris Boyle, Umair Jamal, and Tom Stavert</li>
@@ -190,8 +155,8 @@ course.
 </aside>
 
 </section>
-<section id="slide-org93effb4" data-audio-src="intro/componentsofassessment.ogg">
-<h3 id="org93effb4">Components of assessment</h3>
+<section id="slide-org4936e8f" data-audio-src="intro/componentsofassessment.ogg">
+<h3 id="org4936e8f">Components of assessment</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -265,8 +230,8 @@ semester 2.
 </section>
 </section>
 <section>
-<section id="slide-orgf9d0a50" data-audio-src="intro/keylearningobjectives.ogg">
-<h2 id="orgf9d0a50">Key learning objectives</h2>
+<section id="slide-org6ddf2ee" data-audio-src="intro/keylearningobjectives.ogg">
+<h2 id="org6ddf2ee">Key learning objectives</h2>
 <ul>
 <li>Problem solving</li>
 <li>Mathematics</li>
@@ -328,8 +293,8 @@ solved analytically.
 </aside>
 
 </section>
-<section id="slide-org06167d2" data-audio-src="intro/prerequisites.ogg">
-<h3 id="org06167d2">Prerequisites</h3>
+<section id="slide-org85b0ceb" data-audio-src="intro/prerequisites.ogg">
+<h3 id="org85b0ceb">Prerequisites</h3>
 <ul>
 <li>CP101: Basic Principles in Chemical Engineering</li>
 <li>CP102: Chemical Engineering: Fundamentals, Techniques and Tools</li>
@@ -382,8 +347,8 @@ that you are confident that you understand them thoroughly.
 </aside>
 
 </section>
-<section id="slide-org10fcae8" data-audio-src="intro/schedule.ogg">
-<h3 id="org10fcae8">Schedule</h3>
+<section id="slide-orge128406" data-audio-src="intro/schedule.ogg">
+<h3 id="orge128406">Schedule</h3>
 <ul>
 <li>Week 1: Python and its applications</li>
 <li>Weeks 2-4: Differential balances</li>
@@ -444,8 +409,8 @@ materials.
 </aside>
 
 </section>
-<section id="slide-org836309f" data-audio-src="intro/learningmaterials.ogg">
-<h3 id="org836309f">Learning resources</h3>
+<section id="slide-org08e3f5c" data-audio-src="intro/learningmaterials.ogg">
+<h3 id="org08e3f5c">Learning resources</h3>
 <ul>
 <li><a href="https://classes.myplace.strath.ac.uk/course/view.php?id=21595">Myplace</a> 
 <ul>
@@ -492,8 +457,8 @@ whole.
 
 </aside>
 </section>
-<section id="slide-org68a481f" data-audio-src="intro/additionalresources.ogg">
-<h3 id="org68a481f">Additional resources</h3>
+<section id="slide-org625997e" data-audio-src="intro/additionalresources.ogg">
+<h3 id="org625997e">Additional resources</h3>
 <ul>
 <li>Books:
 <ul>
@@ -552,8 +517,8 @@ class forum on Myplace.
 </section>
 </section>
 <section>
-<section id="slide-orga2f7131" data-audio-src="intro/questions.ogg">
-<h2 id="orga2f7131">Questions?</h2>
+<section id="slide-org6593b96" data-audio-src="intro/questions.ogg">
+<h2 id="org6593b96">Questions?</h2>
 <p>
 If you have any questions, please post to the class forum on Myplace
 or email me at leo.lue@strath.ac.uk.
@@ -597,7 +562,7 @@ multiplex: {
 // Optional libraries used to extend on reveal.js
 dependencies: [
 ]
-,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'About', icon: '<i class="fa fa-info"></i>', src: 'about.html' }, { title: 'Links', icon:  '<i class="fa fa-external-link-alt"></i>', src: 'links.html' }, ] }, chalkboard: { src: "chalkboard.json", toggleChalkboardButton: {left: "80px"}, toggleNotesButton: {left: "130px"}, }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'intro/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: false, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: true, },});
+,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'Links', icon:  '<i class="fa fa-external-link-alt"></i>', src: 'links.html' }, ] }, chalkboard: { src: "chalkboard.json", toggleChalkboardButton: {left: "80px"}, toggleNotesButton: {left: "130px"}, }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'intro/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: false, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: true, },});
 </script>
 </body>
 </html>
