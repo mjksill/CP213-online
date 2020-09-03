@@ -9,7 +9,7 @@
 </style>
 <link rel="stylesheet" href="../../reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="../../reveal.js/dist/theme/beige.css" id="theme"/>
+<link rel="stylesheet" href="../../reveal.js/dist/theme/moon.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -22,68 +22,168 @@
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
 <script src="../../reveal.js/plugin/zoom/zoom.js"></script>
 <script src="../../reveal.js/plugin/notes/notes.js"></script>
 <script src="../../reveal.js/plugin/search/search.js"></script>
 <script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+<!---script src="../../reveal.js/plugin/highlight/highlight.js"></script--->
+<script src="./captions.js"></script>
+
+<script src="../../reveal.js-plugins/menu/menu.js"></script>
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
+
 
 <script src="../../reveal.js-plugins/chalkboard/plugin.js"></script>
-
 <script src="../../reveal.js-plugins/audio-slideshow/plugin.js"></script>
 <script src="../../reveal.js-plugins/audio-slideshow/recorder.js"></script>
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
+
 <section>
-<section id="slide-orgee8c99c">
-<h2 id="orgee8c99c">CP213: Applied mathematics and problem solving</h2>
-<h2>Mass and species balances</h2>
+<section id="slide-org750fdeb">
+<h2 id="org750fdeb">CP213: Applied mathematics and problem solving</h2>
+<h2>Momentum/force balances</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
+<p class="fragment" data-audio-src="momentum/title.ogg"></p>
+
+<button onclick="showCaptions()" font-size="16px"><i class="fa fa-closed-captioning fa-2x"></i></button>
+
+
+
+<aside class="notes">
+nil
+</aside>
+
 </section>
 </section>
 <section>
-<section id="slide-orgf7bb009">
-<h2 id="orgf7bb009">Overview</h2>
-</section>
-</section>
-<section>
-<section id="slide-org01571e8">
-<h2 id="org01571e8">Mass on an inclined plane</h2>
+<section id="slide-org1e5fbcc">
+<h2 id="org1e5fbcc">Overview</h2>
 <ul>
+<li>basic balance equation</li>
+<li>mass on an inclined plane</li>
+<li>barometric formula</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org0245efa">
+<h2 id="org0245efa">Basic balance equation</h2>
+<div>
+\begin{align*}
+{\rm
+accumulation = inflow - outflow + generation
+}
+\end{align*}
+
+</div>
+
+</section>
+<section id="slide-org4cdd0d3">
+<h3 id="org4cdd0d3">Newton's second law of motion</h3>
+<div>
+\begin{align*}
+F &= m a
+\end{align*}
+
+</div>
+<p>
+where a
+</p>
+
+<div>
+\begin{align*}
+F &= \frac{d}{dt} (mv)
+\end{align*}
+
+</div>
+<p>
+where \(mv\) is the momentum.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgc2dede6">
+<h2 id="orgc2dede6">Mass on an inclined plane</h2>
+<ul>
+<li>gravity: \(m g\)</li>
+<li>friction: \(\mu N\)</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgaed7841">
+<h2 id="orgaed7841">car moving uphill</h2>
+<ul>
+<li>work performed by a force
+<ul>
+<li></li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org791e44e">
+<h2 id="org791e44e">Barometric formula</h2>
+<ul>
+<li>pressure: \(p dA\)</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org9473eff">
+<h2 id="org9473eff">car</h2>
+</section>
+</section>
+<section>
+<section id="slide-orga718f2d">
+<h2 id="orga718f2d">Summary</h2>
+<ul>
+<li>Newton's second law of motion</li>
+<li>types of forces
+<ul>
+<li>contact</li>
+<li>pressure</li>
 <li>gravity</li>
+<li>drag force</li>
 <li>friction</li>
 
-</ul>
-
-</section>
-</section>
-<section>
-<section id="slide-orgc87300a">
-<h2 id="orgc87300a">car moving uphill</h2>
-<ul>
-<li>work performed by a force</li>
+</ul></li>
+<li>work and power</li>
 
 </ul>
 
-</section>
-</section>
-<section>
-<section id="slide-org002c49f">
-<h2 id="org002c49f">pressure on a dam</h2>
-</section>
-</section>
-<section>
-<section id="slide-org42d69ce">
-<h2 id="org42d69ce">car</h2>
-</section>
-</section>
-<section>
-<section id="slide-org0e5b3a1">
-<h2 id="org0e5b3a1">Summary</h2>
+
+
+<aside class="notes">
+nil
+</aside>
 </section>
 </section>
 </div>
@@ -95,7 +195,7 @@
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
 width:1200, height:800, rolling_links:true, keyboard:true, overview:true,
-plugins: [RevealChalkboard, RevealAudioSlideshow, RevealAudioRecorder],
+plugins: [ RevealMarkdown, RevealMenu, RevealChalkboard, RevealAudioSlideshow, RevealAudioRecorder],
 multiplex: {
     secret: '', // null if client
     id: '', // id, obtained from socket.io server
@@ -105,7 +205,7 @@ multiplex: {
 // Optional libraries used to extend on reveal.js
 dependencies: [
 ]
-,chalkboard: { src: "chalkboard.json", }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'audio/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: 0, autoplay: false, defaultDuration: 5, defaultAudios: true, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: false, },});
+,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'Links', icon:  '<i class="fa fa-external-link-alt"></i>', src: 'links.html' }, ] }, chalkboard: { src: "chalkboard.json", toggleChalkboardButton: {left: "80px"}, toggleNotesButton: {left: "130px"}, }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'intro/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: false, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: true, },});
 </script>
 </body>
 </html>

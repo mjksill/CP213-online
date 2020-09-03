@@ -9,7 +9,7 @@
 </style>
 <link rel="stylesheet" href="../../reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="../../reveal.js/dist/theme/beige.css" id="theme"/>
+<link rel="stylesheet" href="../../reveal.js/dist/theme/moon.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -27,10 +27,14 @@
 <body>
 <div class="reveal">
 <div class="slides">
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
 <script src="../../reveal.js/plugin/zoom/zoom.js"></script>
 <script src="../../reveal.js/plugin/notes/notes.js"></script>
 <script src="../../reveal.js/plugin/search/search.js"></script>
 <script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+<!---script src="../../reveal.js/plugin/highlight/highlight.js"></script--->
+<script src="./captions.js"></script>
 
 <script src="../../reveal.js-plugins/menu/menu.js"></script>
 <link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
@@ -38,23 +42,122 @@
 
 
 <script src="../../reveal.js-plugins/chalkboard/plugin.js"></script>
-
-
-
 <script src="../../reveal.js-plugins/audio-slideshow/plugin.js"></script>
 <script src="../../reveal.js-plugins/audio-slideshow/recorder.js"></script>
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
 <section>
-<section id="slide-org7f3972e">
-<h2 id="org7f3972e">CP213: Applied mathematics and problem solving</h2>
+<section id="slide-org7208dc9">
+<h2 id="org7208dc9">CP213: Applied mathematics and problem solving</h2>
 <h2>Multivariate calculus</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
-<p class="fragment" data-audio-src="python/1.0.ogg">
+<p class="fragment" data-audio-src="energy/title.ogg"></p>
+
+<button onclick="showCaptions()" font-size="16px"><i class="fa fa-closed-captioning fa-2x"></i></button>
+
+<aside class="notes">
+nil
+</aside>
+
+
+
+</section>
+</section>
+<section>
+<section id="slide-org5671b04" data-audio-src="multivariate/overview.ogg">
+<h2 id="org5671b04">Overview</h2>
+<aside class="notes">
+nil
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-orgf955cf0">
+<h2 id="orgf955cf0">Partial derivatives</h2>
+<div>
+\begin{align*}
+f(x,y)
+\end{align*}
+
+</div>
+
+<div>
+\begin{align*}
+\frac{\partial f(x,y)}{\partial x}
+&= \frac{f(x+\Delta x,y)-f(x,y)}{\Delta x}
+\\
+\frac{\partial f(x,y)}{\partial y}
+&= \frac{f(x,y+\Delta y)-f(x,y)}{\Delta y}
+\end{align*}
+
+</div>
+
+</section>
+<section id="slide-org9facb05">
+<h3 id="org9facb05">Taylor series</h3>
+<div>
+\begin{align*}
+f(x+\Delta x,y+\Delta y) 
+&\approx f(x, y) 
++ \frac{\partial f(x,y)}{\partial x} \Delta x
++ \frac{\partial f(x,y)}{\partial y} \Delta y
++ \cdots
+\end{align*}
+
+</div>
+
+<aside class="notes">
+nil
+</aside>
+
+
+</section>
+<section id="slide-org1aead83">
+<h3 id="org1aead83">Directional derivatives</h3>
+<p>
+Given \(f(x,y)\) what is the rate of change of \(f\) in the direction
+\(\Delta{\bf r}\)?
 </p>
 
+<div>
+\begin{align*}
+\nabla f(x,y)
+&= \frac{\partial f}{\partial x} \, \hat{\bf e}_x
++ \frac{\partial f}{\partial y} \, \hat{\bf e}_y
+\end{align*}
 
+</div>
+
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+How do we determine the rate of change of a property in a certain
+direction?  Lets take the direction to be
+</p>
+
+</aside>
+
+</section>
+<section id="slide-orgd85ef44">
+<h3 id="orgd85ef44">Triple product rule</h3>
+<p>
+\(f(x,y,z) = 0\)
+</p>
+
+<div>
+\begin{align*}
+\left(\frac{\partial z}{\partial x}\right)_y
+&= - \left(\frac{\partial z}{\partial y}\right)_x
+\left(\frac{\partial y}{\partial x}\right)_z
+\end{align*}
+
+</div>
 
 <aside class="notes">
 <p>
@@ -63,34 +166,20 @@
 
 </aside>
 
-</section>
-</section>
-<section>
-<section id="slide-org40dd7c2">
-<h2 id="org40dd7c2">Overview</h2>
 
 </section>
-</section>
-<section>
-<section id="slide-org7908ab0">
-<h2 id="org7908ab0">Partial derivatives</h2>
-<div class="outline-text-2" id="text-org7908ab0">
-</div>
-</section>
-<section id="slide-orgeddc3da">
-<h3 id="orgeddc3da">Taylor series</h3>
+<section id="slide-orga59c5bf">
+<h3 id="orga59c5bf">Optimization</h3>
+<aside class="notes">
+<p>
+
+</p>
+
+</aside>
 
 </section>
-<section id="slide-orged87d8e">
-<h3 id="orged87d8e">Directional derivatives</h3>
-
-</section>
-<section id="slide-org7714363">
-<h3 id="org7714363">Optimization</h3>
-
-</section>
-<section id="slide-orgf63507d">
-<h3 id="orgf63507d">Linear regression</h3>
+<section id="slide-org0f20017">
+<h3 id="org0f20017">Linear regression</h3>
 <p>
 Method of least squares
 </p>
@@ -119,10 +208,9 @@ f(x_k;a,b) &= ax_k + b
 
 </div>
 
-
 </section>
-<section id="slide-org552f307">
-<h3 id="org552f307">Variations of the objective function</h3>
+<section id="slide-orgc88344d">
+<h3 id="orgc88344d">Variations of the objective function</h3>
 <ul>
 <li>absolute vs.\ relative errors</li>
 
@@ -164,8 +252,8 @@ w_k \propto \frac{1}{\sigma_k^2}
 </div>
 
 </section>
-<section id="slide-org8c4f238">
-<h3 id="org8c4f238">linear regression</h3>
+<section id="slide-org5dba35a">
+<h3 id="org5dba35a">linear regression</h3>
 <div>
 \begin{align*}
 f(x;a,b) &= ax + b
@@ -208,8 +296,8 @@ S_{xy} = \frac{1}{N} \sum_{k=1}^N x_ky_k
 </div>
 
 </section>
-<section id="slide-org0644855">
-<h3 id="org0644855">linear regression</h3>
+<section id="slide-orga06e82c">
+<h3 id="orga06e82c">linear regression</h3>
 <div>
 \begin{align*}
 a &= \frac{S_{xy}-S_xS_y}{S_{xx}-S_x^2}
@@ -234,19 +322,44 @@ S_{xy} = \frac{1}{N} \sum_{k=1}^N x_ky_k
 
 </div>
 
+<aside class="notes">
+<p>
+
+</p>
+
+</aside>
 
 
 </section>
 </section>
 <section>
-<section id="slide-org954b83d">
-<h2 id="org954b83d">Multiple integration</h2>
+<section id="slide-orge0a41e2">
+<h2 id="orge0a41e2">Multiple integration</h2>
+<div>
+\begin{align*}
+I &= \int dx \int dy f(x,y)
+\end{align*}
 
+</div>
+
+
+</section>
+<section id="slide-org7fa10e6">
+<h3 id="org7fa10e6">Kinetic energy of a rotating body</h3>
+</section>
+<section id="slide-org5d9b1e0">
+<h3 id="org5d9b1e0">Pressure acting on a submerged object</h3>
+</section>
+<section id="slide-org8d265e4">
+<h3 id="org8d265e4">Probability</h3>
+</section>
+<section id="slide-org0001295">
+<h3 id="org0001295">center of mass</h3>
 </section>
 </section>
 <section>
-<section id="slide-org02bdb58">
-<h2 id="org02bdb58">Summary</h2>
+<section id="slide-orga0105bc">
+<h2 id="orga0105bc">Summary</h2>
 </section>
 </section>
 </div>
@@ -268,7 +381,7 @@ multiplex: {
 // Optional libraries used to extend on reveal.js
 dependencies: [
 ]
-,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'Plugins', icon: '<i class="fa fa-external-link-alt"></i>', src: 'toc.html' }, { title: 'About', icon: '<i class="fa fa-info"></i>', src: 'about.html' } ] }, chalkboard: { src: "chalkboard.json", }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'python/', suffix: '.ogg', textToSpeechURL: "http://api.voicerss.org/?key=f6810d3ff6e84980b30a10c447b36003&hl=eng-us&c=ogg&src=", defaultNotes: true, defaultText: false, advance: 0, autoplay: true, defaultDuration: 5, defaultAudios: true, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: false, },});
+,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'Links', icon:  '<i class="fa fa-external-link-alt"></i>', src: 'links.html' }, ] }, chalkboard: { src: "chalkboard.json", toggleChalkboardButton: {left: "80px"}, toggleNotesButton: {left: "130px"}, }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'intro/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: false, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: true, },});
 </script>
 </body>
 </html>
