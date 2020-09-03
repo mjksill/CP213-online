@@ -9,7 +9,7 @@
 </style>
 <link rel="stylesheet" href="../../reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="../../reveal.js/dist/theme/beige.css" id="theme"/>
+<link rel="stylesheet" href="../../reveal.js/dist/theme/moon.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -26,11 +26,51 @@
 <body>
 <div class="reveal">
 <div class="slides">
+<link rel="stylesheet" href="LL.css" id="theme">
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
 <script src="../../reveal.js/plugin/zoom/zoom.js"></script>
 <script src="../../reveal.js/plugin/notes/notes.js"></script>
 <script src="../../reveal.js/plugin/search/search.js"></script>
 <script src="../../reveal.js/plugin/markdown/markdown.js"></script>
 <!---script src="../../reveal.js/plugin/highlight/highlight.js"></script--->
+<script>
+function showCaptions() {
+  var captionWindow = window.open("", "myWindow", "width=500, height=500")
+
+  var element = document.getElementsByClassName("notes");
+  for (var i=0; i<element.length; i++) {
+    console.log(i)
+    var slide = element[i].parentElement
+    console.log(slide)
+    var title = slide.getElementsByTagName("h2")
+    var titleText
+    if (title.length > 0) {
+       titleText = title[0].textContent;
+    } else {
+       titleText = slide.getElementsByTagName("h3")[0].textContent
+    }
+    
+    console.log(title.textContent)
+
+    var text = element[i].innerHTML;
+
+    captionWindow.document.write("<h2>")
+    captionWindow.document.write(titleText)
+    captionWindow.document.write("</h2>")
+    captionWindow.document.write("<div>")
+    captionWindow.document.write(text)
+    captionWindow.document.write("</div>")
+  }
+}
+
+function hideCaptions() {
+  var element = document.getElementsByClassName("caption");
+  for (var i=0; i<element.length; i++) {
+    element[i].style.display = "none";
+  }
+}
+</script>
 
 <script src="../../reveal.js-plugins/menu/menu.js"></script>
 <link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
@@ -44,16 +84,13 @@
 
 
 <section>
-<section id="slide-orga63bc9d">
-<h2 id="orga63bc9d">CP213: Applied mathematics and problem solving</h2>
+<section id="slide-org728781c" data-audio-src="intro/title.ogg">
+<h2 id="org728781c">CP213: Applied mathematics and problem solving</h2>
 <h2>Module overview</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
-<p class="fragment" data-audio-src="intro/title.ogg" 
-title="
-This is a test.
-">
-</p>
+
+<button onclick="showCaptions()"><i class="fa fa-closed-captioning"></i></button>
 
 
 
@@ -73,8 +110,8 @@ of the module aims and contents.
 </section>
 </section>
 <section>
-<section id="slide-orgd4f6399" data-audio-src="intro/overview.ogg"  title="This is hover text">
-<h2 id="orgd4f6399">Overview</h2>
+<section id="slide-org4d22eb5" data-audio-src="intro/overview.ogg">
+<h2 id="org4d22eb5">Overview</h2>
 <ul>
 <li>Module leader: Leo Lue &amp; Abdul Sharif</li>
 <li>Demonstrators: Chris Boyle, Umair Jamal, and Tom Stavert</li>
@@ -98,6 +135,8 @@ of the module aims and contents.
 </ul></li>
 
 </ul>
+
+
 
 <aside class="notes">
 <p>
@@ -151,10 +190,8 @@ course.
 </aside>
 
 </section>
-<section id="slide-org550f4aa">
-<h3 id="org550f4aa">Components of assessment</h3>
-<p class="fragment" data-audio-src="intro/componentsofassessment.ogg"></p>
-
+<section id="slide-org93effb4" data-audio-src="intro/componentsofassessment.ogg">
+<h3 id="org93effb4">Components of assessment</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -203,17 +240,10 @@ course.
 
 <aside class="notes">
 <p>
-There are two components of assessment for this module: 
-</p>
-
-<p>
-a class test, worth 20% of the overall module mark,
-to be held in week 10 of semester 1.
-</p>
-
-<p>
-and an exam, worth 80% of the module mark, to be held in the semester 2
-examination period.
+There are two components of assessment for this module: a class test,
+worth 20% of the overall module mark, to be held in week 10 of
+semester 1, and an exam, worth 80% of the module mark, to be held in
+the semester 2 examination period.
 </p>
 
 <p>
@@ -229,39 +259,14 @@ be two hours in duration, and more details will be provided in
 semester 2.
 </p>
 
-
-
-
-<ul>
-<li>The class test will be held during week 10 of semester 1, instead of
-the regular tutorial workshop.</li>
-<li>The test will be on Friday 2020 November 27 starting at 15.00.</li>
-<li>The test will be worth 20% of the module mark.</li>
-
-</ul>
-
-<p>
-Exam
-</p>
-<ul>
-<li>The exam is work 80% of the module mark.</li>
-<li>Held during the semester 2 examination diet (April-May).</li>
-<li>TWO hours in duration</li>
-<li>More details to be provided in semester 2</li>
-
-</ul>
-
 </aside>
 
 
 </section>
 </section>
 <section>
-<section id="slide-org5a7ac7d">
-<h2 id="org5a7ac7d">Key learning objectives</h2>
-<p class="fragment" data-audio-src="intro/keylearningobjectives.ogg"></p>
-
-
+<section id="slide-orgf9d0a50" data-audio-src="intro/keylearningobjectives.ogg">
+<h2 id="orgf9d0a50">Key learning objectives</h2>
 <ul>
 <li>Problem solving</li>
 <li>Mathematics</li>
@@ -304,7 +309,7 @@ developing our ability to analyze and solve the mathematical models
 that we develop.  Part of this will involve revising and reinforcing
 your prior knowledge of mathematics, but we will also cover some new
 material, including analytical and numerical methods for solving
- equations.
+equations.
 </p>
 
 
@@ -320,97 +325,11 @@ used to provide solutions to mathematical problems that cannot be
 solved analytically.
 </p>
 
-
-
-
-
-
-<p>
-The ability
-to program&#x2026; document your calculations
-</p>
-
-<p>
-which will be analyzing the mathematical models we develop
-and analyzing their behavior.  
-</p>
-
-<p>
-how can we formulate the mathematical equations that describe the
-physical system.
-</p>
-
-
-<p>
-For example, we might have an exothermic chemical reaction going on in
-a vessel that needs
-</p>
-
-<p>
-developing problems solving skills
-</p>
-
-
-<p>
-how to relate any
-</p>
-
-
-<p>
-and learning some new mathematical concepts and
-techniques, and using Python.
-</p>
-
-
-
-
-<p>
-Mathematics:
-</p>
-
-<p>
-This module will review and use concepts in calculus in a deeper
-manner.  
-</p>
-
-<p>
-ordinary differential equations,
-analytical and numerical methods for their solution,
-multivariate calculus, calculus applied to functions of several variables.
-</p>
-
-<p>
-In the second semester, this will include
-</p>
-
-
-<p>
-linear algebra, which involves a better understanding of the abstract
-notion of vector spaces and their applications, 
-</p>
-
-
-<p>
-Python programming:
-</p>
-
-<p>
-Finally, we will be introducing you to programming, using Python.  
-At the most basic level, it will provide a
-</p>
-
-<p>
-The ability
-to program&#x2026; document your calculations
-</p>
-
 </aside>
 
 </section>
-<section id="slide-orga6a60b9">
-<h3 id="orga6a60b9">Prerequisites</h3>
-<p class="fragment" data-audio-src="intro/prerequisites.ogg"></p>
-
+<section id="slide-org06167d2" data-audio-src="intro/prerequisites.ogg">
+<h3 id="org06167d2">Prerequisites</h3>
 <ul>
 <li>CP101: Basic Principles in Chemical Engineering</li>
 <li>CP102: Chemical Engineering: Fundamentals, Techniques and Tools</li>
@@ -460,50 +379,11 @@ It is important that you review the materials from these modules, so
 that you are confident that you understand them thoroughly.
 </p>
 
-
-
-
-
-
-
-<ul>
-<li>the use of units and conversions between units</li>
-<li>the concept of unit operations, and the use of process and block
-flow diagrams</li>
-<li>Elementary material and energy balances</li>
-<li>basic thermodynamics, including heat engines, phase diagrams, and
-the concept of entropy and</li>
-<li>chemical reaction kinetics and equilibria, including stoichiometry
-and conversions between mass and molar quantities.</li>
-<li>mass transfer and heat transfer, including radiative heat transfer</li>
-
-</ul>
-
-<p>
-MM111/112
-</p>
-<ul>
-<li>algebra</li>
-<li>trigonometry</li>
-<li>vector analysis</li>
-<li>basic calculus</li>
-
-</ul>
-
-<p>
-this module builds apply material from the first day of the course in
-particular the chemical engineering modules cp101 and cp102 and the
-mathematics modules m 111 and M 112 from cp101 and 102
-</p>
-
 </aside>
 
 </section>
-<section id="slide-org4f08968">
-<h3 id="org4f08968">Schedule</h3>
-<p class="fragment" data-audio-src="intro/schedule.ogg"></p
-
-
+<section id="slide-org10fcae8" data-audio-src="intro/schedule.ogg">
+<h3 id="org10fcae8">Schedule</h3>
 <ul>
 <li>Week 1: Python and its applications</li>
 <li>Weeks 2-4: Differential balances</li>
@@ -561,59 +441,11 @@ The final week of the semester will be devoted to reviewing the module
 materials.
 </p>
 
-
-
-
-<p>
-using the basic balance equation to develop equations
-to 
-</p>
-
-
-
-
-
-<p>
-Python and its applications, differential balances, ordinary
-differential equations, and multivariate calculus.
-</p>
-
-<p>
-The
-</p>
-
-
-
-<p>
-Ordinary differential equations
-</p>
-
-
-
-
-<p>
-Multivariate calculus
-</p>
-
-
-
-<p>
-The final week will be devoted to reviewing the 
-contents of the module.  This will also be an opportunity
-</p>
-
 </aside>
 
-
-
-
-
 </section>
-<section id="slide-org350bd35">
-<h3 id="org350bd35">Learning resources</h3>
-<p class="fragment" data-audio-src="intro/learningmaterials.ogg"></p>
-
-
+<section id="slide-org836309f" data-audio-src="intro/learningmaterials.ogg">
+<h3 id="org836309f">Learning resources</h3>
 <ul>
 <li><a href="https://classes.myplace.strath.ac.uk/course/view.php?id=21595">Myplace</a> 
 <ul>
@@ -660,10 +492,8 @@ whole.
 
 </aside>
 </section>
-<section id="slide-orgfb0663d">
-<h3 id="orgfb0663d">Additional resources</h3>
-<p class="fragment" data-audio-src="intro/additionalresources.ogg"></p>
-
+<section id="slide-org68a481f" data-audio-src="intro/additionalresources.ogg">
+<h3 id="org68a481f">Additional resources</h3>
 <ul>
 <li>Books:
 <ul>
@@ -722,11 +552,8 @@ class forum on Myplace.
 </section>
 </section>
 <section>
-<section id="slide-org719a709">
-<h2 id="org719a709">Questions?</h2>
-<p class="fragment" data-audio-src="intro/questions.ogg"></p>
-
-
+<section id="slide-orga2f7131" data-audio-src="intro/questions.ogg">
+<h2 id="orga2f7131">Questions?</h2>
 <p>
 If you have any questions, please post to the class forum on Myplace
 or email me at leo.lue@strath.ac.uk.
@@ -770,7 +597,7 @@ multiplex: {
 // Optional libraries used to extend on reveal.js
 dependencies: [
 ]
-,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'About', icon: '<i class="fa fa-info"></i>', src: 'about.html' }, { title: 'Links', icon:  '<i class="fa fa-external-link-alt"></i>', src: 'links.html' }, ] }, chalkboard: { src: "chalkboard.json", toggleChalkboardButton: {left: "80px"}, toggleNotesButton: {left: "130px"}, }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'intro/', suffix: '.ogg', textToSpeechURL: "http://api.voicerss.org/?key=f6810d3ff6e84980b30a10c447b36003&hl=eng-us&c=ogg&src=", defaultNotes: true, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: true, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: false, },});
+,menu: { themes: false, transitions: false, markers: true, hideMissingTitles: true, custom: [ { title: 'About', icon: '<i class="fa fa-info"></i>', src: 'about.html' }, { title: 'Links', icon:  '<i class="fa fa-external-link-alt"></i>', src: 'links.html' }, ] }, chalkboard: { src: "chalkboard.json", toggleChalkboardButton: {left: "80px"}, toggleNotesButton: {left: "130px"}, }, keyboard: { 67: function() { RevealChalkboard.toggleNotesCanvas() }, 66: function() { RevealChalkboard.toggleChalkboard() }, 46: function() { RevealChalkboard.clear() }, 8: function() { RevealChalkboard.reset() }, 68: function() { RevealChalkboard.download() }, 88: function() { RevealChalkboard.colorNext() }, 89: function() { RevealChalkboard.colorPrev() }, }, audio: { prefix: 'intro/', suffix: '.ogg', textToSpeechURL: null, defaultNotes: false, defaultText: false, advance: -1, autoplay: true, defaultDuration: 5, defaultAudios: false, playerOpacity: 0.05, playerStyle: 'position: fixed; bottom: 4px; left: 25%; width: 50%; height:75px; z-index: 33;', startAtFragment: true, },});
 </script>
 </body>
 </html>
