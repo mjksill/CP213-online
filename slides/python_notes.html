@@ -47,8 +47,8 @@
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
 <section>
-<section id="slide-org31f8e9f">
-<h2 id="org31f8e9f">Navigation instructions</h2>
+<section id="slide-orgbb44055">
+<h2 id="orgbb44055">Navigation instructions</h2>
 <ul>
 <li>Press <i class="fa fa-bars"></i> at the bottom
 left corner of the page to open a menu.
@@ -75,8 +75,8 @@ the bottom right corner of the page to navigate the presentation.</li>
 </section>
 </section>
 <section>
-<section id="slide-org4393149">
-<h2 id="org4393149">CP213: Applied mathematics and problem solving</h2>
+<section id="slide-orgaa59426">
+<h2 id="orgaa59426">CP213: Applied mathematics and problem solving</h2>
 <h2>Python and its applications</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
@@ -103,8 +103,8 @@ simple chemical engineering problems.
 </section>
 </section>
 <section>
-<section id="slide-org84679f4" data-audio-src="python/">
-<h2 id="org84679f4">Overview</h2>
+<section id="slide-org35436be" data-audio-src="python/">
+<h2 id="org35436be">Overview</h2>
 <ul class="fragment data-audio-src hello">
 <li>Basic elements of the language</li>
 <li>CP101 worked examples and tutorial problems</li>
@@ -187,23 +187,36 @@ to as far you want to go.
 
 
 </section>
-<section id="slide-orgb6ebc95" data-audio-src="python/title.mp3">
-<h3 id="orgb6ebc95">Python</h3>
+<section id="slide-orgaff7d45" data-audio-src="python/title.mp3">
+<h3 id="orgaff7d45">Python</h3>
 <p class="fragment" data-audio-text="This is a test.">
 </p>
 
 
 
 </section>
-<section id="slide-org859e1f2">
-<h3 id="org859e1f2">Jupyter notebooks</h3>
+<section id="slide-org71a5ad4">
+<h3 id="org71a5ad4">Jupyter notebooks</h3>
+<ul>
+<li>Binder</li>
+<li>Google Colab</li>
+
+</ul>
+
 <aside class="notes">
 <p>
 
 </p>
 
 <p>
-In this module
+Your main interaction with Python during this module will be through
+Jupyter notebooks.  These are 
+</p>
+
+<p>
+There is no need for you to install any software on your computer to
+run these notebooks.  All the Python code will run on your web
+browser.
 </p>
 
 <p>
@@ -219,28 +232,24 @@ mybinder.org, and the second method is with Google Colab.
 </aside>
 
 </section>
-<section id="slide-org0b40cbe">
-<h3 id="org0b40cbe">binder</h3>
-
-
+<section id="slide-org35604a3">
+<h3 id="org35604a3">binder</h3>
 
 </section>
-<section id="slide-org4d0a4e4">
-<h3 id="org4d0a4e4">Google Colab</h3>
-
-
+<section id="slide-orga52a67f">
+<h3 id="orga52a67f">Google Colab</h3>
 
 
 </section>
 </section>
 <section>
-<section id="slide-org68bcdb8">
-<h2 id="org68bcdb8">Basics</h2>
-<div class="outline-text-2" id="text-org68bcdb8">
+<section id="slide-org92782b8">
+<h2 id="org92782b8">Basics</h2>
+<div class="outline-text-2" id="text-org92782b8">
 </div>
 </section>
-<section id="slide-orgeb2e474">
-<h3 id="orgeb2e474">Python as a calculator</h3>
+<section id="slide-orgb208668">
+<h3 id="orgb208668">Python as a calculator</h3>
 <div>
 <iframe allow="autoplay; fullscreen" height="670" width="1120" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29103&amp;code=cT~vMz6ypmaysddJKeMFJCSsrvT7UEV" frameborder="0" allowfullscreen></iframe>
 <!---iframe width="560" height="315" src="https://www.youtube.com/embed/eraiBe2SiEk?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe--->
@@ -249,19 +258,14 @@ mybinder.org, and the second method is with Google Colab.
 </video--->
 </div>
 
-<div>
-Please see the
-<a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_calculator.ipynb">
-Jupyter notebook
-</a>
-for more details.
-</div>
-
+<p>
+See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_calculator.ipynb">binder</a> or <a href="https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/python_calculator.ipynb">colab</a>.
+</p>
 
 
 </section>
-<section id="slide-org4e0ab7c">
-<h3 id="org4e0ab7c">Example using variables</h3>
+<section id="slide-orgf8d0e34">
+<h3 id="orgf8d0e34">Example using variables</h3>
 <div>
 <iframe allow="autoplay; fullscreen" height="670" width="1120" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29111&amp;code=cD~cHPkoDRjmze5AKdfGOIjDPWQ7Rny" frameborder="0" allowfullscreen></iframe>
 <!---iframe width="560" height="315" src="https://www.youtube.com/embed/16Yaz4oIkhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe--->
@@ -270,84 +274,49 @@ for more details.
 </video--->
 </div>
 
-<div>
-Please see the
-<a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_variables.ipynb">
-Jupyter notebook
-</a>
-for more details.
-</div>
+<p>
+See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_variables.ipynb">binder</a> or <a href="https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/python_variables.ipynb">colab</a>.
+</p>
+
 
 </section>
-<section id="slide-orgc120612">
-<h3 id="orgc120612">Variables: Numbers and strings</h3>
+<section id="slide-org115050b">
+<h3 id="org115050b">Variables: Numbers and strings</h3>
 <iframe allow="autoplay; fullscreen" height="630" width="500" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29216&amp;code=d5~ijLchTEOwGJMFWGf7RFQxZ9ZBPq8" frameborder="0" allowfullscreen></iframe>
 
 </section>
-<section id="slide-orga1e7fa5">
-<h3 id="orga1e7fa5">Variables: Lists</h3>
+<section id="slide-org117c96f">
+<h3 id="org117c96f">Variables: Lists</h3>
 <iframe allow="autoplay; fullscreen" height="630" width="1120" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29236&amp;code=cL~mfgCUbBNSZdDeCdWGhFAybiLyywg" frameborder="0" allowfullscreen></iframe>
-
-</section>
-<section id="slide-orgcaf93a6">
-<h3 id="orgcaf93a6">Lists: Summary</h3>
-<div class="org-src-container">
-
-<pre  class="src src-python"><code trim>
-<span style="color: #eedd82;">x_list</span> = [<span style="color: #ffa07a;">'hello'</span>, <span style="color: #ffa07a;">'good bye'</span>, 1.2, 5]   <span style="color: #ff7f24;"># </span><span style="color: #ff7f24;">creating a list</span>
-
-<span style="color: #00ffff;">print</span>(x_list[0])    <span style="color: #ff7f24;"># </span><span style="color: #ff7f24;">accessing first element of a list</span>
-<span style="color: #00ffff;">print</span>(x_list[2])    <span style="color: #ff7f24;"># </span><span style="color: #ff7f24;">accessing third element of a list</span>
-<span style="color: #00ffff;">print</span>(x_list[-1])   <span style="color: #ff7f24;"># </span><span style="color: #ff7f24;">accessing last element of a list</span>
-<span style="color: #00ffff;">print</span>(x_list[-2])   <span style="color: #ff7f24;"># </span><span style="color: #ff7f24;">accessing second to last element of a list</span>
-
-<span style="color: #eedd82;">x_list</span>[3] = 2
-
-x_list.append(137.0)    
-
-<span style="color: #00ffff;">print</span>(x_list)
-
-<span style="color: #00ffff;">print</span>(x_list[1:2])
-<span style="color: #00ffff;">print</span>(x_list[1:3])
-<span style="color: #00ffff;">print</span>(x_list[:2])
-<span style="color: #00ffff;">print</span>(x_list[2:])
-
-<span style="color: #eedd82;">y_list</span> = [x*x <span style="color: #00ffff;">for</span> x <span style="color: #00ffff;">in</span> <span style="color: #b0c4de;">range</span>(5)]    <span style="color: #ff7f24;"># </span><span style="color: #ff7f24;">list comprehension</span>
-
-
-</code></pre>
-</div>
 
 <p>
 See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_lists.ipynb">binder</a> or <a href="https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/python_lists.ipynb">colab</a>.
 </p>
 
+</section>
+<section id="slide-org40756fc">
+<h3 id="org40756fc">Variables: Dictionaries</h3>
+<iframe allow="autoplay; fullscreen" height="630" width="500" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29339&amp;code=de~TDs6xrAtA4CCHNgzdMWVeqbpLI9b" frameborder="0" allowfullscreen></iframe>
+
 
 
 </section>
-<section id="slide-orgcd7d4cf">
-<h3 id="orgcd7d4cf">Variables: Dictionaries</h3>
-
-</section>
-<section id="slide-orgdd41b4e">
-<h3 id="orgdd41b4e">Example using dictionaries</h3>
+<section id="slide-org3037533">
+<h3 id="org3037533">Example using dictionaries</h3>
 <iframe allow="autoplay; fullscreen" height="630" width="500" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29221&amp;code=ct~RXSPpeK9MhrYbicpud7Bk9fTexcM" frameborder="0" allowfullscreen></iframe>
 
-</section>
-<section id="slide-org419b88c">
-<h3 id="org419b88c">More advanced use of dictionaries</h3>
-<iframe allow="autoplay; fullscreen" height="630" width="500" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29219&amp;code=de~TDs6xoAsA0CIHNgAdMWXejboLO9b" frameborder="0" allowfullscreen></iframe>
-
-</section>
-<section id="slide-org8a9c7cc">
-<h3 id="org8a9c7cc"></h3>
 <p>
-See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_dictionaries.ipynb">binder</a> or <a href="https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/python_dictionaries.ipynb">colab.</a>
+See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_dictionaries.ipynb">binder</a> or <a href="https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/python_dictionaries.ipynb">colab</a>.
 </p>
 
 </section>
-<section id="slide-orgc63cbdd">
-<h3 id="orgc63cbdd">Dictionaries</h3>
+<section id="slide-org183b594">
+<h3 id="org183b594">More advanced use of dictionaries</h3>
+<iframe allow="autoplay; fullscreen" height="630" width="500" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29219&amp;code=de~TDs6xoAsA0CIHNgAdMWXejboLO9b" frameborder="0" allowfullscreen></iframe>
+
+</section>
+<section id="slide-org05efcdd">
+<h3 id="org05efcdd">Dictionaries</h3>
 <div>
 Please see the
 <a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_dictionaries.ipynb">
@@ -370,8 +339,8 @@ x<sub>dict</sub> = {k:k**2 for k in range(10)}
 </aside>
 
 </section>
-<section id="slide-org2c0de21">
-<h3 id="org2c0de21">Functions</h3>
+<section id="slide-org588d204">
+<h3 id="org588d204">Functions</h3>
 <div>
 Please see the
 <a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_functions.ipynb">
@@ -381,8 +350,8 @@ for more details.
 </div>
 
 </section>
-<section id="slide-org1f28fde">
-<h3 id="org1f28fde">Conditionals</h3>
+<section id="slide-org0a652fe">
+<h3 id="org0a652fe">Conditionals</h3>
 <div>
 Please see the
 <a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_conditionals.ipynb">
@@ -392,8 +361,8 @@ for more details.
 </div>
 
 </section>
-<section id="slide-org49e755e">
-<h3 id="org49e755e">Heat capacity of ideal gases: Shomate equation</h3>
+<section id="slide-org1a86a55">
+<h3 id="org1a86a55">Heat capacity of ideal gases: Shomate equation</h3>
 <aside class="notes">
 <p>
 
@@ -468,8 +437,8 @@ temperatures.
 </section>
 </section>
 <section>
-<section id="slide-org38a890b">
-<h2 id="org38a890b">Importing libraries</h2>
+<section id="slide-org1fb3774">
+<h2 id="org1fb3774">Importing libraries</h2>
 <ul>
 <li>Matplotlib</li>
 <li>Numpy</li>
@@ -493,8 +462,8 @@ There are a lo
 </aside>
 
 </section>
-<section id="slide-org172193f">
-<h3 id="org172193f">numpy</h3>
+<section id="slide-orge66c3cf">
+<h3 id="orge66c3cf">numpy</h3>
 <ul>
 <li>mathematical functions
 <ul>
@@ -525,8 +494,8 @@ from Python.  For example, if you want to take the sine of a
 </aside>
 
 </section>
-<section id="slide-org0b1780b">
-<h3 id="org0b1780b">importing numpy</h3>
+<section id="slide-org2582282">
+<h3 id="org2582282">importing numpy</h3>
 <div class="org-src-container">
 
 <pre  class="src src-python"><code trim><span style="color: #00ffff;">import</span> numpy
@@ -554,8 +523,8 @@ within your program.
 </aside>
 
 </section>
-<section id="slide-org89f7e6c">
-<h3 id="org89f7e6c">matplotlib / pylab</h3>
+<section id="slide-org24d5afe">
+<h3 id="org24d5afe">matplotlib / pylab</h3>
 <ul>
 <li><a href="https://matplotlib.org/tutorials/introductory/pyplot.html">Pyplot tutorial</a></li>
 <li>see the notebook</li>
@@ -582,8 +551,8 @@ nil
 </aside>
 
 </section>
-<section id="slide-org732ff89">
-<h3 id="org732ff89">scipy</h3>
+<section id="slide-orgda9b8b7">
+<h3 id="orgda9b8b7">scipy</h3>
 <ul>
 <li>root finders</li>
 <li>non-linear equation solver: <code>fsolve</code></li>
@@ -593,8 +562,8 @@ nil
 </ul>
 
 </section>
-<section id="slide-org77ba8b4">
-<h3 id="org77ba8b4">Examples of using <code>fsolve</code></h3>
+<section id="slide-org895f34e">
+<h3 id="org895f34e">Examples of using <code>fsolve</code></h3>
 <ul>
 <li>CP101: Tutorial 17, Question 1 (<a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/CP101T17Q1.ipynb">binder</a> or <a href="https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/CP101T17Q1.ipynb">colab</a>)</li>
 <li>CP101: Tutorial 17, Question 1 (<a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/CP101T17Q1-2.ipynb">binder</a> or <a href="https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/CP101T17Q1-2.ipynb">colab</a>)</li>
@@ -604,8 +573,8 @@ nil
 
 
 </section>
-<section id="slide-orge3c14b6">
-<h3 id="orge3c14b6">Sympy</h3>
+<section id="slide-org700b51c">
+<h3 id="org700b51c">Sympy</h3>
 <ul>
 <li>symbolic algebra</li>
 <li>differentiation</li>
@@ -623,8 +592,8 @@ nil
 </aside>
 
 </section>
-<section id="slide-org1e72071">
-<h3 id="org1e72071">sympy</h3>
+<section id="slide-orgfa0ec70">
+<h3 id="orgfa0ec70">sympy</h3>
 <div class="org-src-container">
 
 <pre  class="src src-python"><code trim>
@@ -637,13 +606,13 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org9836941">
-<h2 id="org9836941">Further resources</h2>
-<div class="outline-text-2" id="text-org9836941">
+<section id="slide-org90f9509">
+<h2 id="org90f9509">Further resources</h2>
+<div class="outline-text-2" id="text-org90f9509">
 </div>
 </section>
-<section id="slide-orga6b608e">
-<h3 id="orga6b608e">Installation</h3>
+<section id="slide-orga03db53">
+<h3 id="orga03db53">Installation</h3>
 <p>
 If you are interested in installing 
 [[<a href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a>]
@@ -670,8 +639,8 @@ If you are interested in installing Python
 </section>
 </section>
 <section>
-<section id="slide-orgaac76f3">
-<h2 id="orgaac76f3">Summary</h2>
+<section id="slide-org0955969">
+<h2 id="org0955969">Summary</h2>
 <aside class="notes">
 nil
 </aside>
