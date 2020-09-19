@@ -47,8 +47,8 @@
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
 <section>
-<section id="slide-org10d7a60">
-<h2 id="org10d7a60">Navigation instructions</h2>
+<section id="slide-org5b8cd93">
+<h2 id="org5b8cd93">Navigation instructions</h2>
 <ul>
 <li>Press <i class="fa fa-bars"></i> at the bottom
 left corner of the page to open a menu.
@@ -74,27 +74,31 @@ the bottom right corner of the page to navigate the presentation.</li>
 </section>
 </section>
 <section>
-<section id="slide-org994a39d" data-audio-src="mass/title.ogg">
-<h2 id="org994a39d">CP213: Applied mathematics and problem solving</h2>
+<section id="slide-org29dfde1" data-audio-src="mass/title.ogg">
+<h2 id="org29dfde1">CP213: Applied mathematics and problem solving</h2>
 <h2>Mass and species balances</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
 <button onclick="showCaptions()" font-size="16px"><i class="fa fa-closed-captioning fa-2x"></i></button>
 
-
 </section>
 </section>
 <section>
-<section id="slide-org772c1fd">
-<h2 id="org772c1fd">Overview</h2>
+<section id="slide-orgeaf8e45">
+<h2 id="orgeaf8e45">Overview</h2>
 <ul>
 <li>Mass balances
 <ul>
-<li>Tank filling &amp; draining</li>
+<li>Tank filling</li>
+<li>Tank draining</li>
 <li>Convection</li>
 
 </ul></li>
-<li>Species balances</li>
+<li>Species balances
+<ul>
+<li>Batch distillation</li>
+
+</ul></li>
 
 </ul>
 
@@ -104,7 +108,10 @@ the bottom right corner of the page to navigate the presentation.</li>
 </p>
 
 <p>
-We start our discussion of balances with the mass balance.
+We start our discussion of differential balances with the mass
+balance.  For this we will consider the simple example of
+filling a tank.  This will give us a physical realization of the
+differentiation and integration.
 </p>
 
 </aside>
@@ -112,16 +119,8 @@ We start our discussion of balances with the mass balance.
 </section>
 </section>
 <section>
-<section id="slide-org8e74594">
-<h2 id="org8e74594">Tank filling &amp; draining</h2>
-<div class="outline-text-2" id="text-org8e74594">
-</div>
-</section>
-<section id="slide-org01db642">
-<h3 id="org01db642">Tank filling</h3>
-<p>
-Mass balance:
-</p>
+<section id="slide-org809b723">
+<h2 id="org809b723">Balance equation for mass</h2>
 <div>
 \begin{align*}
 {\rm accumulation} 
@@ -131,19 +130,25 @@ Mass balance:
 
 </div>
 
-<aside class="notes">
-nil
-</aside>
+<ul>
+<li>accumulation: \(\Delta m\), \(\Delta(\rho  V)\), etc.</li>
+<li>flow terms:
+<ul>
+<li>\(\dot{m}\Delta t\)</li>
+<li>\(\rho \dot{V}\Delta t\) or \(\rho v A\Delta t\)</li>
+
+</ul></li>
+<li>generation</li>
+
+</ul>
 
 
 </section>
-<section id="slide-org07d37f4">
-<h3 id="org07d37f4">Determining the flow rate</h3>
+</section>
+<section>
+<section id="slide-orgc6c8b8e">
+<h2 id="orgc6c8b8e">Tank filling</h2>
 <aside class="notes">
-<p>
-
-</p>
-
 <p>
 Consider filling a tank with water at an unknown volumetric flow rate
 \(\dot{V}(t)\) from a tap, which could vary with time.  How can we
@@ -175,62 +180,17 @@ V &= A h
 
 </aside>
 
-</section>
-<section id="slide-org470645a">
-<h3 id="org470645a">Time varying measurement</h3>
-<aside class="notes">
-<p>
-
-</p>
-
-<p>
-If we think a little harder, we can be a bit more sophisticated than
-this.  We can use our phone to make a video of the filling of the
-container with time.  We can then plot the measured height of the
-water level in the tank a different instants in time.  
-</p>
-
-<p>
-If the flow rate from the tap is constant, then these points should
-lie on a a straight line.  The slope of this line will be the speed at
-which the water.
-</p>
-
-<p>
-That is
-</p>
-<div>
-\begin{align*}
-\dot{V} &=  A \frac{h(t+\Delta t)-h(t)}{\Delta t}
-\end{align*}
-
-</div>
-
-
-<p>
-What will happen if the flow rate from the tap \(\dot{V}\) is not
-constant?  As we noted in the case of a constant flow rate, the
-variation of the height with time is a straight line, and so the slope
-is constant.  If the flow rate varies with time, then data points will
-no longer lie on a straight line, but on a more general curve.
-</p>
-
-<p>
-In this case, we can still estimate the flow rate at a particular
-time \(t\) by 
-</p>
-<div>
-\begin{align*}
-\dot{V} &\approx  A \frac{h(t+\Delta t)-h(t)}{\Delta t}
-\end{align*}
-
-</div>
-
-</aside>
 
 </section>
-<section id="slide-org01d3122">
-<h3 id="org01d3122">Determining the water level</h3>
+</section>
+<section>
+<section id="slide-org848de07">
+<h2 id="org848de07">Variable cross-sectional area</h2>
+</section>
+</section>
+<section>
+<section id="slide-org4b1b3b4">
+<h2 id="org4b1b3b4">Determining the water level</h2>
 <aside class="notes">
 <p>
 
@@ -293,50 +253,33 @@ The rate of
 </aside>
 
 </section>
-<section id="slide-orgc541f58">
-<h3 id="orgc541f58">Tank drainage</h3>
+</section>
+<section>
+<section id="slide-org5a43759">
+<h2 id="org5a43759">Gravity drainage</h2>
 <aside class="notes">
 <p>
+The first example that we will work through is tank drainage.  
+</p>
 
+<p>
+As you will find out in fluid flow and in 
 </p>
 
 </aside>
-
-</section>
-<section id="slide-org433da17">
-<h3 id="org433da17"></h3>
-<aside class="notes">
-<p>
-
-</p>
-
-</aside>
-
-</section>
-<section id="slide-org238019b">
-<h3 id="org238019b">Combining draining and filling</h3>
-<p>
-Mass balance:
-</p>
-<div>
-\begin{align*}
-{\rm accumulation} 
-&= {\rm inflow} - {\rm outflow}
-+ {\rm generation}
-\end{align*}
-
-</div>
 
 </section>
 </section>
 <section>
-<section id="slide-orgab09923">
-<h2 id="orgab09923">Distributed flow</h2>
-<div class="outline-text-2" id="text-orgab09923">
-</div>
+<section id="slide-org133d7d4">
+<h2 id="org133d7d4">Combining draining and filling</h2>
+
+
 </section>
-<section id="slide-org8028c66">
-<h3 id="org8028c66">velocity and volumetric flowrate</h3>
+</section>
+<section>
+<section id="slide-org8fdcc43">
+<h2 id="org8fdcc43">Velocity and volumetric flowrate</h2>
 <aside class="notes">
 <p>
 
@@ -359,22 +302,54 @@ dV = A dh
 
 </aside>
 
-</section>
-</section>
-<section>
-<section id="slide-orge79528a">
-<h2 id="orge79528a">Species balance</h2>
-<div class="outline-text-2" id="text-orge79528a">
-</div>
-</section>
-<section id="slide-org331ae17">
-<h3 id="org331ae17"></h3>
 
 </section>
 </section>
 <section>
-<section id="slide-orga4411ae">
-<h2 id="orga4411ae">Summary</h2>
+<section id="slide-org9945b24">
+<h2 id="org9945b24">Balance equation: Species \(A\)</h2>
+<div>
+\begin{align*}
+{\rm accumulation} 
+&= {\rm inflow} - {\rm outflow}
++ {\rm generation}
+\end{align*}
+
+</div>
+
+<ul>
+<li>accumulation: \(\Delta N_A\) or \(\Delta (c_A V)\)</li>
+<li>flow:
+<ul>
+<li>\(\dot{m}\Delta t\)</li>
+<li>\(\dot{V} c_A\Delta t\) or \((v A) c_A\Delta t\)</li>
+
+</ul></li>
+<li>generation:
+<ul>
+<li>chemical reaction: \(\nu_A \Delta alpha\)</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgdfad447">
+<h2 id="orgdfad447">Species balance: Batch distillation</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-org4bc734c">
+<h2 id="org4bc734c">Summary</h2>
+<ul>
+<li>Balance equation</li>
+
+</ul>
+
+
 <aside class="notes">
 nil
 </aside>
