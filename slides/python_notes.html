@@ -47,8 +47,8 @@
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
 <section>
-<section id="slide-orgd30f076">
-<h2 id="orgd30f076">Navigation instructions</h2>
+<section id="slide-org555fcf4">
+<h2 id="org555fcf4">Navigation instructions</h2>
 <ul>
 <li>Press <i class="fa fa-bars"></i> at the bottom
 left corner of the page to open a menu.
@@ -75,8 +75,8 @@ the bottom right corner of the page to navigate the presentation.</li>
 </section>
 </section>
 <section>
-<section id="slide-orgb3c7909" data-audio-src="python/title.ogg">
-<h2 id="orgb3c7909">CP213: Applied mathematics and problem solving</h2>
+<section id="slide-org405457c" data-audio-src="python/title.ogg">
+<h2 id="org405457c">CP213: Applied mathematics and problem solving</h2>
 <h2>Python and its applications</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
@@ -101,8 +101,8 @@ simple chemical engineering problems.
 </section>
 </section>
 <section>
-<section id="slide-org2738d25" data-audio-src="python/">
-<h2 id="org2738d25">Overview</h2>
+<section id="slide-org9dff06b" data-audio-src="python/">
+<h2 id="org9dff06b">Overview</h2>
 <ul>
 <li>Jupyter notebooks</li>
 <li>Basic elements of Python</li>
@@ -117,69 +117,34 @@ simple chemical engineering problems.
 </p>
 
 <p>
-Python is a powerful programming language that is&#x2026; widely used across
-many fields and industries.  
+Python is a powerful programming language that is widely used across
+many fields and industries.  Many employers are actively seeking
+programmers with experience in Python.
 </p>
 
 <p>
-Many employers are actively seeking programmers experience in Python
-for
+Python is an "open" language, and it can be freely downloaded and
+installed on almost any computer.  One of its great advantages is that
+there are many freely available software libraries that can be
+downloaded and used that numerical methods (e.g., numpy), optimization
+(e.g., pyomo), machine learning (e.g., pytorch, scikit-learn,
+tensor-flow), thermodynamics and reaction engineering (e.g., Cantera),
+and data handling (e.g., Pandas).  In addition, there is a large open
+source community that actively develop and contribute codes for others
+to freely use.
 </p>
 
 <p>
-It is open source and it can be freely downloaded and installed on
-almost any computer.  If you are interested in installing it in your
-computer, please see the Anaconda distribution at this link&#x2026;
+The beauty of Python is that once you learn some of its basic
+concepts, you can easily get started in using any of these software
+libraries to develop your own applications.
 </p>
 
 <p>
-One of its great advantages is that there are many freely available
-software libraries that can be downloaded and used that numerical
-methods (e.g., numpy), optimization (e.g., pyomo), machine learning
-(e.g., pytorch, scikit-learn, tensor-flow), thermodynamics and
-reaction engineering (e.g., Cantera), and data handling (e.g., Pandas)
-as well as
-</p>
-
-<p>
-The beauty of Python is that once you learn some of its basic concepts, you can
-easily get started in using any of these software libraries to develop
-applications
-</p>
-
-<p>
-There is a large open source community that actively develop and
-contribute codes for others to freely use.
-</p>
-
-<p>
-This module will give an introduction to Python.
-</p>
-
-<p>
-Python is an extremely powerful programming language, 
-which allows the
-</p>
-
-<p>
-&#x2026;implementation of s with many subtleties.  However, it is also
-extremely flexible, and lends itself to many different programming
-styles (e.g., procedural, object oriented, functional, etc.)
-</p>
-
-<p>
-, consequently, it can be used
-on many different levels.
-</p>
-
-<p>
-In this module, we will start using Python as a simple calculator that
-</p>
-
-
-<p>
-We will leave it to you to push your exploration and learning of Python
-to as far you want to go.
+This module will give an introduction to Python, starting with using
+it as a simple calculator.  Then, we will give more sophisticated
+uses.  We will leave it to you to push your exploration and learning
+of Python to as far you want to go.
 </p>
 
 </aside>
@@ -187,8 +152,8 @@ to as far you want to go.
 </section>
 </section>
 <section>
-<section id="slide-org5a378b8">
-<h2 id="org5a378b8">Jupyter notebooks</h2>
+<section id="slide-org2a9cef2">
+<h2 id="org2a9cef2">Jupyter notebooks</h2>
 <ul>
 <li>Binder</li>
 <li>Google Colab</li>
@@ -202,17 +167,9 @@ to as far you want to go.
 
 <p>
 Your main interaction with Python during this module will be through
-Jupyter notebooks.  These are 
-</p>
-
-<p>
-There is no need for you to install any software on your computer to
-run these notebooks.  All the Python code will run on your web
-browser.
-</p>
-
-<p>
-We will implement this using Jupyter notebooks.
+Jupyter notebooks.  There is no need for you to install any software
+on your computer to run these notebooks.  All the Python code will run
+on your web browser.
 </p>
 
 <p>
@@ -226,8 +183,8 @@ mybinder.org, and the second method is with Google Colab.
 </section>
 </section>
 <section>
-<section id="slide-org743cbc8">
-<h2 id="org743cbc8">binder</h2>
+<section id="slide-orgf3f502a">
+<h2 id="orgf3f502a">binder</h2>
 <iframe allow="autoplay; fullscreen" height="500" width="1120" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29814&amp;code=d3~fUfZO0i6BIXbLrG8LPTO8TxihQo0" frameborder="0" allowfullscreen></iframe>
 
 
@@ -238,8 +195,8 @@ To follow along, open the Jupyter notebook: <a href="https://mybinder.org/v2/gh/
 </section>
 </section>
 <section>
-<section id="slide-orgc1b5279">
-<h2 id="orgc1b5279">Google Colab</h2>
+<section id="slide-orgea72af0">
+<h2 id="orgea72af0">Google Colab</h2>
 <iframe allow="autoplay; fullscreen" height="500" width="1120" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29815&amp;code=dd~rQcuNtpfbWJpjOH07dDfsrn3beyJ" frameborder="0" allowfullscreen></iframe>
 
 
@@ -250,8 +207,8 @@ To follow along, open the Jupyter notebook: <a href="https://colab.research.goog
 </section>
 </section>
 <section>
-<section id="slide-orga5bfcf6">
-<h2 id="orga5bfcf6">Python as a calculator</h2>
+<section id="slide-orgbda6675">
+<h2 id="orgbda6675">Python as a calculator</h2>
 <div>
 <iframe allow="autoplay; fullscreen" height="500" width="1120" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29103&amp;code=cT~vMz6ypmaysddJKeMFJCSsrvT7UEV" frameborder="0" allowfullscreen></iframe>
 <!---iframe width="560" height="315" src="https://www.youtube.com/embed/eraiBe2SiEk?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe--->
@@ -268,8 +225,8 @@ See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-onli
 </section>
 </section>
 <section>
-<section id="slide-orgd872154">
-<h2 id="orgd872154">Example using variables</h2>
+<section id="slide-org576469f">
+<h2 id="org576469f">Example using variables</h2>
 <div>
 <iframe allow="autoplay; fullscreen" height="500" width="1120" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29111&amp;code=cD~cHPkoDRjmze5AKdfGOIjDPWQ7Rny" frameborder="0" allowfullscreen></iframe>
 <!---iframe width="560" height="315" src="https://www.youtube.com/embed/16Yaz4oIkhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe--->
@@ -286,15 +243,15 @@ See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-onli
 </section>
 </section>
 <section>
-<section id="slide-org6811e52">
-<h2 id="org6811e52">Variables: Numbers and strings</h2>
+<section id="slide-orgf595499">
+<h2 id="orgf595499">Variables: Numbers and strings</h2>
 <iframe allow="autoplay; fullscreen" height="500" width="500" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29216&amp;code=d5~ijLchTEOwGJMFWGf7RFQxZ9ZBPq8" frameborder="0" allowfullscreen></iframe>
 
 </section>
 </section>
 <section>
-<section id="slide-orgf000181">
-<h2 id="orgf000181">Variables: Lists</h2>
+<section id="slide-orgc6102bc">
+<h2 id="orgc6102bc">Variables: Lists</h2>
 <iframe allow="autoplay; fullscreen" height="500" width="1120" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29236&amp;code=cL~mfgCUbBNSZdDeCdWGhFAybiLyywg" frameborder="0" allowfullscreen></iframe>
 
 <p>
@@ -304,8 +261,8 @@ See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-onli
 </section>
 </section>
 <section>
-<section id="slide-orge490c76">
-<h2 id="orge490c76">Variables: Dictionaries</h2>
+<section id="slide-org14b464d">
+<h2 id="org14b464d">Variables: Dictionaries</h2>
 <iframe allow="autoplay; fullscreen" height="500" width="500" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29339&amp;code=de~TDs6xrAtA4CCHNgzdMWVeqbpLI9b" frameborder="0" allowfullscreen></iframe>
 
 
@@ -313,8 +270,8 @@ See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-onli
 </section>
 </section>
 <section>
-<section id="slide-org8082547">
-<h2 id="org8082547">Example using dictionaries</h2>
+<section id="slide-org070afc8">
+<h2 id="org070afc8">Example using dictionaries</h2>
 <iframe allow="autoplay; fullscreen" height="500" width="500" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29221&amp;code=ct~RXSPpeK9MhrYbicpud7Bk9fTexcM" frameborder="0" allowfullscreen></iframe>
 
 <p>
@@ -324,18 +281,40 @@ See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-onli
 </section>
 </section>
 <section>
-<section id="slide-orgca3096f">
-<h2 id="orgca3096f">More advanced use of dictionaries</h2>
+<section id="slide-orgdc59f09">
+<h2 id="orgdc59f09">More advanced use of dictionaries</h2>
 <iframe allow="autoplay; fullscreen" height="500" width="500" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=31008&amp;code=cT~vNz0yrmdyodcJPeOFPCWsuvO7OEQ" frameborder="0" allowfullscreen></iframe>
 
 </section>
 </section>
 <section>
-<section id="slide-org18d3bac">
-<h2 id="org18d3bac">Importing libraries</h2>
+<section id="slide-orge19b219">
+<h2 id="orge19b219">Functions</h2>
+
+
+<p>
+See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_functions.ipynb">binder</a> or <a href="https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/python_functions.ipynb">colab</a>.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb9c980d">
+<h2 id="orgb9c980d">Conditionals</h2>
+
+
+<p>
+See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_conditionals.ipynb">binder</a> or <a href="https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/python_conditionals.ipynb">colab</a>.
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb00cfea">
+<h2 id="orgb00cfea">Importing libraries</h2>
 <ul>
-<li>Matplotlib</li>
 <li>Numpy</li>
+<li>Matplotlib</li>
 <li>Scipy</li>
 <li>Sympy</li>
 
@@ -377,8 +356,8 @@ module, and that you will find extremely useful, include:
 </section>
 </section>
 <section>
-<section id="slide-orge2d6a7d">
-<h2 id="orge2d6a7d">importing numpy</h2>
+<section id="slide-org17c6124">
+<h2 id="org17c6124">importing numpy</h2>
 <div class="org-src-container">
 
 <pre  class="src src-python"><code trim><span style="color: #00ffff;">import</span> numpy
@@ -420,8 +399,8 @@ case, we can call a specific function within
 </section>
 </section>
 <section>
-<section id="slide-org4fba783">
-<h2 id="org4fba783">numpy</h2>
+<section id="slide-org019ce1b">
+<h2 id="org019ce1b">numpy</h2>
 <ul>
 <li>mathematical functions
 <ul>
@@ -455,8 +434,8 @@ from Python.  For example, if you want to take the sine of a
 </section>
 </section>
 <section>
-<section id="slide-org3d376f4">
-<h2 id="org3d376f4">matplotlib / pylab</h2>
+<section id="slide-org338a1f6">
+<h2 id="org338a1f6">matplotlib / pylab</h2>
 <ul>
 <li>Basic introduction: <a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_plotting.ipynb">binder</a> or <a href="https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/python_plotting.ipynb">colab</a></li>
 <li><a href="https://matplotlib.org/tutorials/introductory/pyplot.html">Pyplot tutorial</a></li>
@@ -508,8 +487,8 @@ plots.
 </section>
 </section>
 <section>
-<section id="slide-org350bd64">
-<h2 id="org350bd64">Scipy</h2>
+<section id="slide-orgc179298">
+<h2 id="orgc179298">Scipy</h2>
 <ul>
 <li>non-linear equation solver: <code>fsolve</code> (<a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_solver.ipynb">binder</a> or <a href="https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/python_solver.ipynb">colab</a>)</li>
 <li>numerical integration: <code>quad</code></li>
@@ -520,8 +499,8 @@ plots.
 </section>
 </section>
 <section>
-<section id="slide-org7858deb">
-<h2 id="org7858deb">Examples of using <code>fsolve</code></h2>
+<section id="slide-orga0ec20f">
+<h2 id="orga0ec20f">Examples of using <code>fsolve</code></h2>
 <ul>
 <li>CP101: Tutorial 17, Question 1 (<a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/CP101T17Q1.ipynb">binder</a> or <a href="https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/CP101T17Q1.ipynb">colab</a>)</li>
 <li>CP101: Tutorial 17, Question 1, alternate solution (<a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/CP101T17Q1-2.ipynb">binder</a> or <a href="https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/CP101T17Q1-2.ipynb">colab</a>)</li>
@@ -541,8 +520,8 @@ plots.
 </section>
 </section>
 <section>
-<section id="slide-org98c9593">
-<h2 id="org98c9593">Sympy</h2>
+<section id="slide-org91a750e">
+<h2 id="org91a750e">Sympy</h2>
 <ul>
 <li>symbolic algebra</li>
 <li>differentiation</li>
@@ -562,11 +541,11 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org8cb0ba4">
-<h2 id="org8cb0ba4">Installation</h2>
+<section id="slide-org029e411">
+<h2 id="org029e411">Installation</h2>
 <p>
 If you are interested in installing Python directly on your computer,
-see the link <a href="https://www.anaconda.com/products/individual">https://www.anaconda.com/products/individual</a>.
+you can try using <a href="https://www.anaconda.com/products/individual">ANACONDA</a>, which is a freely available distribution.
 </p>
 
 <aside class="notes">
@@ -590,8 +569,8 @@ If you are interested in installing Python
 </section>
 </section>
 <section>
-<section id="slide-orge4e5560">
-<h2 id="orge4e5560">Summary</h2>
+<section id="slide-org16e6f93">
+<h2 id="org16e6f93">Summary</h2>
 <aside class="notes">
 nil
 </aside>
