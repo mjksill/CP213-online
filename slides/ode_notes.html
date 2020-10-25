@@ -47,14 +47,37 @@
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
 <section>
-<section id="slide-org50531a5">
-<h2 id="org50531a5">CP213: Applied mathematics and problem solving</h2>
+<section id="slide-orge5e3a47">
+<h2 id="orge5e3a47">Navigation instructions</h2>
+<ul>
+<li>Press <i class="fa fa-bars"></i> at the bottom
+left corner of the page to open a menu.
+<ul>
+<li>Jump to any slide within this presentation to clicking its title.</li>
+<li>Press <i class="fa fa-external-link-alt"></i> to
+navigate to another presentation.</li>
+
+</ul></li>
+<li>Press <a class="hide-on-pdf" onclick="document.location =
+  '?print-pdf';" id="PrintButton"><i class="fa fa-print"></i></a> to
+"print" a *.pdf of the presentation.</li>
+<li>Press <a onclick="showCaptions()" id="PrintButton"><i class="fa fa-closed-captioning"></i></a>
+to open a written transcript of the audio in the slides.</li>
+<li>Press the <code>SPACE</code> key to progress forward in the presentation.</li>
+<li>Use the <code>UP</code> / <code>DOWN</code> / <code>LEFT</code> / <code>RIGHT</code> arrow keys or the arrows in
+the bottom right corner of the page to navigate the presentation.</li>
+
+</ul>
+
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgbc5072d">
+<h2 id="orgbc5072d">CP213: Applied mathematics and problem solving</h2>
 <h2>Ordinary differential equations</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
-
-<p class="fragment" data-audio-src="energy/title.ogg"></p>
-
-<button onclick="showCaptions()" font-size="16px"><i class="fa fa-closed-captioning fa-2x"></i></button>
 
 
 
@@ -62,6 +85,12 @@
 <p>
 
 </p>
+
+<p>
+In the last several lectures, we have been performing mass, species,
+energy, and momentum balances on several system
+</p>
+
 
 <p>
 In this portion of the module, we will look at methods for solving
@@ -81,8 +110,12 @@ A key manner in which we classify differential equations
 <ul>
 <li>first order equations
 <ul>
-<li>linear</li>
+<li>directly integrable</li>
 <li>separable</li>
+<li>linear</li>
+<li>homogeneous equations</li>
+<li>change of variables</li>
+<li>dependent variable variable \(y\) does not appear explicitly</li>
 
 </ul></li>
 
@@ -97,8 +130,8 @@ We have already encountered these types of equations
 </section>
 </section>
 <section>
-<section id="slide-org3d6a98f" data-audio-src="ode/overview.ogg">
-<h2 id="org3d6a98f">Overview</h2>
+<section id="slide-org8658ae7" data-audio-src="ode/overview.ogg">
+<h2 id="org8658ae7">Overview</h2>
 <aside class="notes">
 nil
 </aside>
@@ -107,20 +140,15 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org2386200">
-<h2 id="org2386200">First order differential equations</h2>
-<div class="outline-text-2" id="text-org2386200">
-</div>
+<section id="slide-org9868768">
+<h2 id="org9868768">First order differential equations</h2>
+
 </section>
-<section id="slide-org3e4d06e">
-<h3 id="org3e4d06e">Separable</h3>
-<div>
-\begin{align*}
-\frac{dy}{dx} &= f(y) g(x)
-\end{align*}
-
-</div>
-
+</section>
+<section>
+<section id="slide-org8ea5bdd">
+<h2 id="org8ea5bdd">Separable</h2>
+<iframe allow="autoplay; fullscreen" height="490" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=33521&amp;code=cD~cIPnoERomtecAOdhGOIbDGWQ7Rny" frameborder="0" allowfullscreen></iframe>
 
 <aside class="notes">
 <p>
@@ -138,43 +166,37 @@ integral.
 </aside>
 
 </section>
-<section id="slide-orgb5abd34">
-<h3 id="orgb5abd34">Linear</h3>
-<div>
-\begin{align*}
-y'(x) + p(x) y(x) &= f(x)
-\end{align*}
+</section>
+<section>
+<section id="slide-org02e3454">
+<h2 id="org02e3454">Homogeneous</h2>
+<iframe allow="autoplay; fullscreen" height="490" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=33520&amp;code=d4~HJvDxTtp8FQvi9fESlmiLWlwSuPI" frameborder="0" allowfullscreen></iframe>
 
-</div>
 
 <aside class="notes">
 <p>
+So far in this module, we have only encountered separable first
+order differential equations.  However, the differential equations
+that arise from many physical problems are not separable, and other methods
+need to be used to solve them.
+</p>
 
+<p>
+In this video, we consider another class of first order differential
+equations typically referred to as homogeneous equations.  These are
+of the form given here, where the derivative of the
 </p>
 
 </aside>
 
+
 </section>
-<section id="slide-orgafb2f4b">
-<h3 id="orgafb2f4b">Integrating factor</h3>
-<p>
-integrating factor
-</p>
-<div>
-\begin{align*}
-P(x) &= \int dx'\, p(x)
-\end{align*}
+</section>
+<section>
+<section id="slide-orgd011bdd">
+<h2 id="orgd011bdd">Linear</h2>
+<iframe allow="autoplay; fullscreen" height="490" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=33509&amp;code=d5~ikLfhSEIwyJSG3Gh7QFRy29XBPq5" frameborder="0" allowfullscreen></iframe>
 
-</div>
-
-<div>
-\begin{align*}
-e^{P(x)} y'(x) + e^{P(x)} p(x) y(x) &= f(x) e^{P(x)}
-\\
-[e^{P(x)} y(x)]'  &= f(x) e^{P(x)}
-\end{align*}
-
-</div>
 
 <aside class="notes">
 <p>
@@ -182,31 +204,20 @@ e^{P(x)} y'(x) + e^{P(x)} p(x) y(x) &= f(x) e^{P(x)}
 </p>
 
 <p>
-A couple of points&#x2026; What if we include an integration constant in
-\(P(x)\) when determining the integrating factor?  Let's see why this
-does not really matter.  If we include this extra term, it will add a
-constant, multiplicative factor to the integrating factor.  This can
-be canceled from all terms in the equation.  So adding an constant to
-\(P(x)\) will not impact the solution.
+In this video, we will present a general method for solving first
+order linear ordinary differential equations.  These are equations
+that can be transformed into this standard form.  The key feature of
+these equations is that the dependent variable \(y\) and its derivative
+appear in the equation as terms of linear order.  They may be multiplied
+by arbitrary functions of \(x\), which do not have to be linear.  In addition,
+the function \(f\) that appears on the right side of the equation 
+does not have to be linear either.
 </p>
 
-
 <p>
-We integrate this equation from a point \(a\), which is typically chosen
-where we know the function (i.e./ initial condition).
-</p>
-<div>
-\begin{align*}
-\int_a^x dt\, [e^{P(t)} y(t)]'  &= \int_a^x dt\, f(t) e^{P(t)}
-\\
-e^{P(x)} y(x) - e^{P(a)} y(a) &= \int_a^x dt\, f(t) e^{P(t)}
-\\
-y(x) &= e^{-P(x)+P(a)} y(a) + \int_a^x dt\, f(t) e^{-P(x)+P(t)}
-\end{align*}
-
-</div>
-<p>
-Any linear first order differential equation can be solved analytically.
+In general these equations are not separable and they are not
+homogeneous in the sense that we discussed in the previous video.
+Consequently, we need an alternative method to solve them.
 </p>
 
 </aside>
@@ -214,20 +225,39 @@ Any linear first order differential equation can be solved analytically.
 </section>
 </section>
 <section>
-<section id="slide-org0241906">
-<h2 id="org0241906">Second order differential equations</h2>
-<div class="outline-text-2" id="text-org0241906">
-</div>
+<section id="slide-orgba80896">
+<h2 id="orgba80896">Second order differential equations</h2>
+
 </section>
-<section id="slide-org977b7c8">
-<h3 id="org977b7c8">Constant coefficients</h3>
+</section>
+<section>
+<section id="slide-org790f0d9">
+<h2 id="org790f0d9">linear</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-orgb74c6b0">
+<h2 id="orgb74c6b0">Constant coefficients</h2>
+<aside class="notes">
+<p>
+In this module, we will limit our 
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org71875ab">
+<h2 id="org71875ab">coupled first order differential equations</h2>
 
 
 </section>
 </section>
 <section>
-<section id="slide-orgd31c915">
-<h2 id="orgd31c915">Summary</h2>
+<section id="slide-orgc33de31">
+<h2 id="orgc33de31">Summary</h2>
 <aside class="notes">
 nil
 </aside>
