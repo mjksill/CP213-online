@@ -47,8 +47,8 @@
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
 <section>
-<section id="slide-orge5e3a47">
-<h2 id="orge5e3a47">Navigation instructions</h2>
+<section id="slide-orgd8a5072">
+<h2 id="orgd8a5072">Navigation instructions</h2>
 <ul>
 <li>Press <i class="fa fa-bars"></i> at the bottom
 left corner of the page to open a menu.
@@ -74,8 +74,8 @@ the bottom right corner of the page to navigate the presentation.</li>
 </section>
 </section>
 <section>
-<section id="slide-orgbc5072d">
-<h2 id="orgbc5072d">CP213: Applied mathematics and problem solving</h2>
+<section id="slide-org51fee5b">
+<h2 id="org51fee5b">CP213: Applied mathematics and problem solving</h2>
 <h2>Ordinary differential equations</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
@@ -130,8 +130,8 @@ We have already encountered these types of equations
 </section>
 </section>
 <section>
-<section id="slide-org8658ae7" data-audio-src="ode/overview.ogg">
-<h2 id="org8658ae7">Overview</h2>
+<section id="slide-orgdc539dc" data-audio-src="ode/overview.ogg">
+<h2 id="orgdc539dc">Overview</h2>
 <aside class="notes">
 nil
 </aside>
@@ -140,14 +140,14 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org9868768">
-<h2 id="org9868768">First order differential equations</h2>
+<section id="slide-org08f5931">
+<h2 id="org08f5931">First order differential equations</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-org8ea5bdd">
-<h2 id="org8ea5bdd">Separable</h2>
+<section id="slide-org9208ad1">
+<h2 id="org9208ad1">Separable</h2>
 <iframe allow="autoplay; fullscreen" height="490" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=33521&amp;code=cD~cIPnoERomtecAOdhGOIbDGWQ7Rny" frameborder="0" allowfullscreen></iframe>
 
 <aside class="notes">
@@ -168,8 +168,8 @@ integral.
 </section>
 </section>
 <section>
-<section id="slide-org02e3454">
-<h2 id="org02e3454">Homogeneous</h2>
+<section id="slide-orgb6f8dd0">
+<h2 id="orgb6f8dd0">Homogeneous</h2>
 <iframe allow="autoplay; fullscreen" height="490" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=33520&amp;code=d4~HJvDxTtp8FQvi9fESlmiLWlwSuPI" frameborder="0" allowfullscreen></iframe>
 
 
@@ -193,8 +193,8 @@ of the form given here, where the derivative of the
 </section>
 </section>
 <section>
-<section id="slide-orgd011bdd">
-<h2 id="orgd011bdd">Linear</h2>
+<section id="slide-org9dc7cf7">
+<h2 id="org9dc7cf7">Linear</h2>
 <iframe allow="autoplay; fullscreen" height="490" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=33509&amp;code=d5~ikLfhSEIwyJSG3Gh7QFRy29XBPq5" frameborder="0" allowfullscreen></iframe>
 
 
@@ -225,20 +225,81 @@ Consequently, we need an alternative method to solve them.
 </section>
 </section>
 <section>
-<section id="slide-orgba80896">
-<h2 id="orgba80896">Second order differential equations</h2>
+<section id="slide-org944f8ce">
+<h2 id="org944f8ce">Integrating factor</h2>
+<iframe allow="autoplay; fullscreen" height="490" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=33522&amp;code=cK~LFSfiWqtv4klI5EszIm0M4uoP4VI" frameborder="0" allowfullscreen></iframe>
+
+<p>
+integrating factor
+</p>
+<div>
+\begin{align*}
+P(x) &= \int dx'\, p(x)
+\end{align*}
+
+</div>
+
+<div>
+\begin{align*}
+e^{P(x)} y'(x) + e^{P(x)} p(x) y(x) &= f(x) e^{P(x)}
+\\
+[e^{P(x)} y(x)]'  &= f(x) e^{P(x)}
+\end{align*}
+
+</div>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+A couple of points&#x2026; What if we include an integration constant in
+\(P(x)\) when determining the integrating factor?  Let's see why this
+does not really matter.  If we include this extra term, it will add a
+constant, multiplicative factor to the integrating factor.  This can
+be canceled from all terms in the equation.  So adding an constant to
+\(P(x)\) will not impact the solution.
+</p>
+
+
+<p>
+We integrate this equation from a point \(a\), which is typically chosen
+where we know the function (i.e./ initial condition).
+</p>
+<div>
+\begin{align*}
+\int_a^x dt\, [e^{P(t)} y(t)]'  &= \int_a^x dt\, f(t) e^{P(t)}
+\\
+e^{P(x)} y(x) - e^{P(a)} y(a) &= \int_a^x dt\, f(t) e^{P(t)}
+\\
+y(x) &= e^{-P(x)+P(a)} y(a) + \int_a^x dt\, f(t) e^{-P(x)+P(t)}
+\end{align*}
+
+</div>
+<p>
+Any linear first order differential equation can be solved analytically.
+</p>
+
+</aside>
 
 </section>
 </section>
 <section>
-<section id="slide-org790f0d9">
-<h2 id="org790f0d9">linear</h2>
+<section id="slide-org544aeb3">
+<h2 id="org544aeb3">Second order differential equations</h2>
 
 </section>
 </section>
 <section>
-<section id="slide-orgb74c6b0">
-<h2 id="orgb74c6b0">Constant coefficients</h2>
+<section id="slide-org05c0bf0">
+<h2 id="org05c0bf0">linear</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-org492429d">
+<h2 id="org492429d">Constant coefficients</h2>
 <aside class="notes">
 <p>
 In this module, we will limit our 
@@ -249,15 +310,15 @@ In this module, we will limit our
 </section>
 </section>
 <section>
-<section id="slide-org71875ab">
-<h2 id="org71875ab">coupled first order differential equations</h2>
+<section id="slide-orgde8b589">
+<h2 id="orgde8b589">coupled first order differential equations</h2>
 
 
 </section>
 </section>
 <section>
-<section id="slide-orgc33de31">
-<h2 id="orgc33de31">Summary</h2>
+<section id="slide-org2326f64">
+<h2 id="org2326f64">Summary</h2>
 <aside class="notes">
 nil
 </aside>
