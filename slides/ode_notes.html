@@ -47,8 +47,8 @@
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
 <section>
-<section id="slide-orgd8a5072">
-<h2 id="orgd8a5072">Navigation instructions</h2>
+<section id="slide-orgf6fc9f0">
+<h2 id="orgf6fc9f0">Navigation instructions</h2>
 <ul>
 <li>Press <i class="fa fa-bars"></i> at the bottom
 left corner of the page to open a menu.
@@ -74,8 +74,8 @@ the bottom right corner of the page to navigate the presentation.</li>
 </section>
 </section>
 <section>
-<section id="slide-org51fee5b">
-<h2 id="org51fee5b">CP213: Applied mathematics and problem solving</h2>
+<section id="slide-org2ada918">
+<h2 id="org2ada918">CP213: Applied mathematics and problem solving</h2>
 <h2>Ordinary differential equations</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
@@ -130,8 +130,8 @@ We have already encountered these types of equations
 </section>
 </section>
 <section>
-<section id="slide-orgdc539dc" data-audio-src="ode/overview.ogg">
-<h2 id="orgdc539dc">Overview</h2>
+<section id="slide-org0c78b9d" data-audio-src="ode/overview.ogg">
+<h2 id="org0c78b9d">Overview</h2>
 <aside class="notes">
 nil
 </aside>
@@ -140,14 +140,24 @@ nil
 </section>
 </section>
 <section>
-<section id="slide-org08f5931">
-<h2 id="org08f5931">First order differential equations</h2>
+<section id="slide-org5037a44">
+<h2 id="org5037a44">First order differential equations</h2>
+<div>
+\begin{align*}
+f\left(\frac{dy}{dx}, y, x\right) &= 0
+\end{align*}
+
+</div>
+
+<p>
+initial condition: \(y(x_0)=y_0\)
+</p>
 
 </section>
 </section>
 <section>
-<section id="slide-org9208ad1">
-<h2 id="org9208ad1">Separable</h2>
+<section id="slide-org64c09c7">
+<h2 id="org64c09c7">Separable</h2>
 <iframe allow="autoplay; fullscreen" height="490" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=33521&amp;code=cD~cIPnoERomtecAOdhGOIbDGWQ7Rny" frameborder="0" allowfullscreen></iframe>
 
 <aside class="notes">
@@ -168,8 +178,8 @@ integral.
 </section>
 </section>
 <section>
-<section id="slide-orgb6f8dd0">
-<h2 id="orgb6f8dd0">Homogeneous</h2>
+<section id="slide-org1eb607e">
+<h2 id="org1eb607e">Homogeneous</h2>
 <iframe allow="autoplay; fullscreen" height="490" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=33520&amp;code=d4~HJvDxTtp8FQvi9fESlmiLWlwSuPI" frameborder="0" allowfullscreen></iframe>
 
 
@@ -193,8 +203,8 @@ of the form given here, where the derivative of the
 </section>
 </section>
 <section>
-<section id="slide-org9dc7cf7">
-<h2 id="org9dc7cf7">Linear</h2>
+<section id="slide-org0bb4c57">
+<h2 id="org0bb4c57">Linear</h2>
 <iframe allow="autoplay; fullscreen" height="490" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=33509&amp;code=d5~ikLfhSEIwyJSG3Gh7QFRy29XBPq5" frameborder="0" allowfullscreen></iframe>
 
 
@@ -225,28 +235,10 @@ Consequently, we need an alternative method to solve them.
 </section>
 </section>
 <section>
-<section id="slide-org944f8ce">
-<h2 id="org944f8ce">Integrating factor</h2>
+<section id="slide-orge64b254">
+<h2 id="orge64b254">Integrating factor</h2>
 <iframe allow="autoplay; fullscreen" height="490" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=33522&amp;code=cK~LFSfiWqtv4klI5EszIm0M4uoP4VI" frameborder="0" allowfullscreen></iframe>
 
-<p>
-integrating factor
-</p>
-<div>
-\begin{align*}
-P(x) &= \int dx'\, p(x)
-\end{align*}
-
-</div>
-
-<div>
-\begin{align*}
-e^{P(x)} y'(x) + e^{P(x)} p(x) y(x) &= f(x) e^{P(x)}
-\\
-[e^{P(x)} y(x)]'  &= f(x) e^{P(x)}
-\end{align*}
-
-</div>
 
 <aside class="notes">
 <p>
@@ -281,25 +273,59 @@ y(x) &= e^{-P(x)+P(a)} y(a) + \int_a^x dt\, f(t) e^{-P(x)+P(t)}
 Any linear first order differential equation can be solved analytically.
 </p>
 
+<p>
+integrating factor
+</p>
+<div>
+\begin{align*}
+P(x) &= \int dx'\, p(x)
+\end{align*}
+
+</div>
+
+<div>
+\begin{align*}
+e^{P(x)} y'(x) + e^{P(x)} p(x) y(x) &= f(x) e^{P(x)}
+\\
+[e^{P(x)} y(x)]'  &= f(x) e^{P(x)}
+\end{align*}
+
+</div>
+
 </aside>
 
 </section>
 </section>
 <section>
-<section id="slide-org544aeb3">
-<h2 id="org544aeb3">Second order differential equations</h2>
+<section id="slide-orgdcd2e95">
+<h2 id="orgdcd2e95">Second order differential equations</h2>
+<iframe allow="autoplay; fullscreen" height="490" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=34040&amp;code=d5~ilL7hQELwFJNG4Gj7OFSy09VBNqc" frameborder="0" allowfullscreen></iframe>
 
 </section>
 </section>
 <section>
-<section id="slide-org05c0bf0">
-<h2 id="org05c0bf0">linear</h2>
+<section id="slide-orgbfc9367">
+<h2 id="orgbfc9367">Linear</h2>
+<iframe allow="autoplay; fullscreen" height="490" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=34041&amp;code=cK~LGS7iUqtuYktHYEzzLlXMbunP4VH" frameborder="0" allowfullscreen></iframe>
+
+
+<aside class="notes">
+<p>
+In this video, we will describe some general properties of linear,
+second order differential equations.
+</p>
+
+</aside>
 
 </section>
 </section>
 <section>
-<section id="slide-org492429d">
-<h2 id="org492429d">Constant coefficients</h2>
+<section id="slide-org935feba">
+<h2 id="org935feba">Linear equations with constant coefficients</h2>
+<iframe allow="autoplay; fullscreen" height="490" width="800" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=34044&amp;code=d3~fWfTNRi6BJXeLvGbLPTS8RxhhRo0" frameborder="0" allowfullscreen></iframe>
+
+
+
 <aside class="notes">
 <p>
 In this module, we will limit our 
@@ -310,15 +336,29 @@ In this module, we will limit our
 </section>
 </section>
 <section>
-<section id="slide-orgde8b589">
-<h2 id="orgde8b589">coupled first order differential equations</h2>
+<section id="slide-orgb8be5a8">
+<h2 id="orgb8be5a8">Particular solutions: Variation of parameters</h2>
 
 
 </section>
 </section>
 <section>
-<section id="slide-org2326f64">
-<h2 id="org2326f64">Summary</h2>
+<section id="slide-orgbb3d28a">
+<h2 id="orgbb3d28a">Particular solutions: Guessing</h2>
+
+
+
+</section>
+</section>
+<section>
+<section id="slide-orge5a29fe">
+<h2 id="orge5a29fe">coupled first order differential equations</h2>
+
+</section>
+</section>
+<section>
+<section id="slide-orgecce4ff">
+<h2 id="orgecce4ff">Summary</h2>
 <aside class="notes">
 nil
 </aside>
