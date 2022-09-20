@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>CP213: Applied Mathematics and Problem Solving</title>
+<meta name="author" content="Leo Lue and Abdul Sharif"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="../../reveal.js-fork/dist/reveal.css"/>
+
+<link rel="stylesheet" href="../../reveal.js-fork/dist/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal.js-fork/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
+<script src="../../reveal.js/plugin/zoom/zoom.js"></script>
+<script src="../../reveal.js/plugin/notes/notes.js"></script>
+<script src="../../reveal.js/plugin/search/search.js"></script>
+<script src="../../reveal.js/plugin/markdown/markdown.js"></script>
+<!---script src="../../reveal.js/plugin/highlight/highlight.js"></script--->
+<script src="./captions.js"></script>
+
+<script src="../../reveal.js-plugins/menu/menu.js"></script>
+<link rel="stylesheet" href="../../resources/Font-Awesome/css/fontawesome.css">
+
+
+
+<script src="../../reveal.js-plugins/chalkboard/plugin.js"></script>
+<script src="../../reveal.js-plugins/audio-slideshow/plugin.js"></script>
+<script src="../../reveal.js-plugins/audio-slideshow/recorder.js"></script>
+<script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
+
+<section>
+<section id="slide-org40a574e">
+<h2 id="org40a574e">CP213: Applied mathematics and problem solving</h2>
+<h2>Module overview</h2>
+<h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
+
+
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+Hello, my name is Dr Leo Lue, and welcome to CP213: Applied
+mathematics and problem solving.  This lecture will give an overview
+of the module aims and contents.
+</p>
+
+<p>
+&lt;button onclick="showCaptions()" font-size="16px"&gt;&lt;i class="fa fa-closed-captioning fa-2x"&gt;&lt;/i&gt;&lt;/button&gt;
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org9be1fe5">
+<h2 id="org9be1fe5">Overview</h2>
+<ul>
+<li>Module leader: Leo Lue &amp; Abdul Sharif</li>
+<li>Demonstrators: Umair Jamal, Anthony Shek, and Tom Stavert</li>
+<li>Lectures / Q&amp;A sessions:
+<ul>
+<li>Wednesday 12.00&#x2013;13.00, TG314 (weeks 1&#x2013;10)</li>
+<li>Friday 15.00&#x2013;16.00, TG310 (weeks 1&#x2013;10)</li>
+
+</ul></li>
+<li>Tutorials:  
+<ul>
+<li>Tuesday 15.00&#x2013;17.00, JW410/411 (weeks 1&#x2013;10)</li>
+
+</ul></li>
+<li>Class test (week 11):
+<ul>
+<li>Tuesday 15.00&#x2013;16.00, JW410/411 (2022 November 29)</li>
+
+</ul></li>
+
+</ul>
+
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+CP213 runs over two semesters.  The lecturers for this module will be
+myself and Abdul Sharif.   Umair Jamal, Anthony Shek, and Tom Stavert
+will be your demonstrators.
+</p>
+
+<p>
+The module will be delivered through a series of live lectures,
+question &amp; answer sessions, and tutorial workshops.  These will be
+delivered via Zoom in the first weeks of the semester, and possibly
+transition to face-to-face sessions later in the semester, depending
+on the circumstances.  The links for each of these activities can be
+found on the Myplace site for the module.
+</p>
+
+<p>
+The Tuesday sessions, which start at 11.00 am, will be mainly to
+deliver lectures of new material, while the Friday sessions, which
+start at 3.00 pm, will be mainly be devoted to answering any questions
+that you may have regarding the course.  Both these sessions will last
+roughly an hour.
+</p>
+
+<p>
+At the beginning of each week, you will be given a tutorial sheet.
+Tutorial sessions will be held on Wednesdays from 11.00 to 1.00 pm to
+give you an opportunity to work in groups on the tutorial problems, as
+well as get help from the demonstrators and the lecturers.
+</p>
+
+<p>
+You should start to attempt the tutorial questions before these
+sessions.  You will be expected to upload your individual solutions to
+these problems on Myplace on the Monday.  Fully worked model solutions
+will be provided in the following week.
+</p>
+
+<p>
+In the final week of the semester, all scheduled sessions
+will be used to review the module contents as well as address any
+questions you may have on this or any other second year modules on the
+course.
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org5f44084">
+<h2 id="org5f44084">Components of assessment</h2>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">component</th>
+<th scope="col" class="org-right">weight</th>
+<th scope="col" class="org-left">format</th>
+<th scope="col" class="org-left">time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">class test</td>
+<td class="org-right">20%</td>
+<td class="org-left">1 hour</td>
+<td class="org-left">2022 November 29</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Tuesday 3.00 pm</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="org-left">final exam</td>
+<td class="org-right">80%</td>
+<td class="org-left">2 hours</td>
+<td class="org-left">April-May exam period</td>
+</tr>
+</tbody>
+</table>
+
+
+<aside class="notes">
+<p>
+There are two components of assessment for this module: a class test,
+worth 20% of the overall module mark, to be held in week 11 of
+semester 1, and an exam, worth 80% of the module mark, to be held in
+the semester 2 examination period.
+</p>
+
+<p>
+The class test will be held on Tuesday November 29, and start at 3.00
+pm.  It will replace the normally scheduled tutorial workshop.  The
+test will last one hour, and more details will be provided later in
+the semester.
+</p>
+
+<p>
+The exam will be held in the semester 2 examination period.  It will
+be two hours in duration, and more details will be provided in the
+latter half of semester 2.
+</p>
+
+</aside>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org19a82aa">
+<h2 id="org19a82aa">Key learning objectives</h2>
+<ul>
+<li>Problem solving</li>
+<li>Mathematics</li>
+<li>Programming with Python</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+The learning objectives for this module can be divided into three main
+areas. 
+</p>
+
+<p>
+The first area is <b>problem solving</b>, which in this module will mainly
+involve formulating mathematical descriptions of different engineering
+problems.
+</p>
+
+<p>
+The biggest challenge in mathematics is typically not the manipulation
+of mathematical expressions or following methods for solving
+equations.  Rather it is understanding how to relate the mathematics
+to real world problems.  Typically, the math problems that we find
+most difficult in school are "word problems".  This because it is hard
+to recognize the connection between elements of the abstract mathematics
+and their concrete incarnations.
+</p>
+
+<p>
+However, the problem solving in this class does not just relate to
+academic mathematical problems.  It involves learning how and where to
+find answers to your questions, which includes using search engines,
+such as Google, or on-line forums, such as Stack Overflow, or other
+learning resources, such as videos on YouTube.  
+</p>
+
+
+<p>
+The other area we will be addressing is <b>mathematics</b>.  We will be
+developing our ability to analyze and solve the mathematical models
+that we develop.  Part of this will involve revising and reinforcing
+your prior knowledge of mathematics, but we will also cover some new
+material, including analytical and numerical methods for solving
+equations.
+</p>
+
+
+<p>
+Finally, we will be introducing you to programming, using Python.  At
+the most basic level, it provides a more efficient way for you to do
+computations that you would normally perform using your calculator;
+however, it allows you easily repeat your calculations, as well as
+provides a record of exactly how they were done.  However, programming
+is much more powerful that this, and we will explore how it can be
+used to provide solutions to mathematical problems that cannot be
+solved analytically.
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-orgeb9e940">
+<h2 id="orgeb9e940">Balances</h2>
+<div>
+\begin{align*}
+{\rm accumulation} &= {\rm in~flow} - {\rm out~flow} + {\rm generation}
+\end{align*}
+
+</div>
+
+<ul>
+<li>balances
+<ul>
+<li>mass / species</li>
+<li>energy</li>
+<li>momentum</li>
+
+</ul></li>
+<li>differential balances: calculus</li>
+<li>differential equations</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+A key concept that we will be using repeatedly through the module
+and 
+</p>
+
+</aside>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgbb3304a">
+<h2 id="orgbb3304a">Python programming</h2>
+
+<div id="orgbb80886" class="figure">
+<p><img src="./intro/side1half.jpg" alt="side1half.jpg" />
+</p>
+</div>
+
+<div class="column" style="float:left; width:30%">
+
+<div id="org0b9be41" class="figure">
+<p><img src="./intro/casio_350_calculator_1512286180_ab688b83.jpg" alt="casio_350_calculator_1512286180_ab688b83.jpg" height="400" />
+</p>
+</div>
+</div>
+
+<div class="column" style="float:right; width:70%">
+
+<div id="org97133f3" class="figure">
+<p><img src="./intro/code_cell.png" alt="code_cell.png" height="400" />
+</p>
+</div>
+</div>
+
+<aside class="notes">
+<ul>
+<li><img src="https://www.math.utah.edu/~alfeld/sliderules/side1half.jpg" alt="side1half.jpg" /></li>
+<li><img src="https://media.karousell.com/media/photos/products/2017/12/03/casio_350_calculator_1512286180_ab688b83.jpg" alt="casio_350_calculator_1512286180_ab688b83.jpg" /></li>
+<li><img src="https://problemsolvingwithpython.com/02-Jupyter-Notebooks/images/code_cell.png" alt="code_cell.png" /></li>
+
+</ul>
+
+
+<ul>
+<li><a href="https://www.math.utah.edu/~alfeld/sliderules/">https://www.math.utah.edu/~alfeld/sliderules/</a></li>
+<li><a href="https://www.carousell.com.my/p/casio-350-calculator-142059492/">https://www.carousell.com.my/p/casio-350-calculator-142059492/</a></li>
+<li><a href="https://problemsolvingwithpython.com/02-Jupyter-Notebooks/02.05-The-Jupyter-Notebook-Interface/">https://problemsolvingwithpython.com/02-Jupyter-Notebooks/02.05-The-Jupyter-Notebook-Interface/</a></li>
+
+</ul>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org6dacc57">
+<h2 id="org6dacc57">Prerequisites</h2>
+<ul>
+<li>CP101: Basic Principles in Chemical Engineering</li>
+<li>CP102: Chemical Engineering: Fundamentals, Techniques and Tools</li>
+<li>MM111/MM112: Mathematics 1B/2B</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+This module builds upon material from the first year of the course, in
+particular, the chemical engineering modules CP101 and CP102 and the
+math modules MM111 and MM112.
+</p>
+
+<p>
+From CP101 and 102 you should revise: 
+</p>
+<ul>
+<li>the use of units and conversion between units</li>
+<li>the concept of unit operations and the use of process and block flow diagrams</li>
+<li>elementary material and energy balances</li>
+<li>basic thermodynamics, including heat engines, phase diagrams, and the
+concept of entropy</li>
+<li>chemical reaction kinetics and equilibria, including stoichiometry
+and conversions between mass and molar quantities,</li>
+<li>and mass transfer of heat transfer including radiative heat transfer</li>
+
+</ul>
+
+<p>
+From the modules M111 and M112, you should review 
+</p>
+<ul>
+<li>algebra</li>
+<li>basic trigonometry</li>
+<li>vector analysis, and</li>
+<li>basic calculus</li>
+
+</ul>
+
+<p>
+It is important that you review the materials from these modules, so
+that you are confident that you understand them thoroughly.
+</p>
+
+</aside>
+
+
+</section>
+</section>
+<section>
+<section id="slide-org1112841">
+<h2 id="org1112841">Schedule</h2>
+<ul>
+<li>Weeks 1-2: Python and its applications</li>
+<li>Weeks 3-5: Differential balances</li>
+<li>Weeks 6-9: Ordinary differential equations</li>
+<li>Week 10: Module review</li>
+<li>Week 11: Class test</li>
+
+</ul>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+The planned schedule for semester 1 is shown here.  It is formally
+divided into four main sections.
+</p>
+
+<p>
+In the first week, the programming language Python will be introduced.
+Don't worry, as there is no expectation for you to have any prior
+programming experience.  There will be no need to install any software
+on your computer to do the programming exercises.  Everything will be
+done through Jupyter notebooks, which will be accessible through your
+web browser.
+</p>
+
+
+<p>
+The next three weeks will devoted learning about differential
+balances, which is essentially applying the concepts of mass and
+energy balances that you were introduced to last year to systems that
+are non-uniform or with properties that may vary in time.  
+</p>
+
+<p>
+These differential balances will result in equations known as
+differential equations, which relate variables, as well as their
+derivatives to each other.  In weeks 5-8, we will learn methods for
+solving these types of equations.
+</p>
+
+<p>
+The last topic we will touch on is multivariate calculus, where we
+will examine functions that depend on more than one independent
+variable.  This will allow us to examine problems such as quantifying
+the impact of uncertainty on our calculations, fitting model
+parameters to experimental data, and the diffusion of mass or heat
+through a material.
+</p>
+
+<p>
+The penultimate week of the semester will be devoted to reviewing the
+module materials.  A class test work 20% of the marks in the module
+will be held on the Wednesday of week 11.
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-orgf619ff6">
+<h2 id="orgf619ff6">Format</h2>
+<ul>
+<li>tutorial worksheets
+<ul>
+<li>released at the beginning of the week</li>
+<li>uploaded to Myplace by midnight on Monday</li>
+<li>fully worked model solutions released on Tuesday</li>
+<li>peer assessment of two other tutorials</li>
+
+</ul></li>
+<li>lectures and Q&amp;A sessions on Wednesdays and Fridays</li>
+
+</ul>
+
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+The only way to learn things is by doing, and to learn mathematics and
+problem solving you have to solve problems!  As a result, the module
+will be driven by the tutorials.  Most of your learning will take
+place as you are struggling with the tutorial questions.
+</p>
+
+<p>
+The tutorial worksheets will be released at the beginning of the week.
+I recommend you take a look at the questions and begin to attempt
+answering them ahead of the Thursday Q&amp;A sessions, so that you can ask
+any questions that you may have.  If you post your questions on the
+Myplace forum ahead of the Thursday session, I may be able to prepare
+materials ahead of time.
+</p>
+
+<p>
+Your solutions to the tutorial questions should be submitted on
+Myplace by midnight on Monday.  Even though you will be working in
+groups to solve the tutorials, you should submit your own individual
+solutions to the Myplace site.  On the following day, fully worked
+model solutions will be released on Myplace.
+</p>
+
+<p>
+As part of the process, you will be asked to evaluate and give
+comments on two other students' tutorial solutions.  One purpose of
+this is to give helpful comments to where students could improve their
+work and they way it is documented.  The other purpose of this is to
+ensure that you have looked at and understand the model solutions.
+</p>
+
+
+
+<p>
+As mentioned previously, the lectures and Q&amp;A sessions will take place
+on Mondays and Thursdays.  These will be hour-long, on-line Zoom
+meetings where new material will be delivered and where you have a
+chance to ask questions.
+</p>
+
+
+<p>
+For most of you, a new aspect of this module will be Python
+programming or programming in general.  The key aspect of programming
+is that it allows you to solve repetitive tasks, such as sorting
+lists and recognizing faces.
+</p>
+
+<p>
+So far on the course, and in your education as a whole, you have
+worked through a lot of problems, either following example worked
+solutions or solving tutorial and coursework problems.  Most likely
+you have solved these problems as "single one-offs".  That is you have
+done the calculations by hand, and if you were asked resolve the
+problem at a later time, you would have to perform the calculations
+all over again.  Also, if you were asked the same question, but with
+slightly changed starting numbers, you would still have to perform all
+your calculations again.
+</p>
+
+<p>
+A key benefit of programming is that it allows you to write a code to
+solve these problems "once".  The code provides clear documentation of
+what calculations you actually have done, and if you find a mistake,
+you can simply fix the code and let the computer perform the
+calculations again for you.  In addition, if you write your code more
+generally, you can use it to solve a wide range of problems, without
+any need to alter the code.  All you need to do is change the input.
+</p>
+
+<p>
+Computers are not very smart, and being able to tell a computer how to
+precisely solve a problem means you have really understood the
+solution.  
+</p>
+
+<p>
+By the end of this module, I hope that you will be able to have a set
+of software tools that you have developed that will allow you to solve
+a wide variety of chemical engineering problems, and that you will be
+able to use these tools you have developed in your further career.
+</p>
+
+</aside>
+
+
+
+</section>
+</section>
+<section>
+<section id="slide-orga7b38a6">
+<h2 id="orga7b38a6">Useful links</h2>
+<ul>
+<li><a href="https://classes.myplace.strath.ac.uk/course/view.php?id=21595">Myplace</a>
+<ul>
+<li><a href="https://classes.myplace.strath.ac.uk/course/view.php?id=21595">https://classes.myplace.strath.ac.uk/course/view.php?id=21595</a></li>
+
+</ul></li>
+<li><a href="https://strath.zoom.us/j/97497583844">Zoom</a>
+<ul>
+<li><a href="https://strath.zoom.us/j/84160178271">https://strath.zoom.us/j/84160178271</a></li>
+
+</ul></li>
+
+</ul>
+
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+All learning materials necessary for this module are accessible from
+the Myplace site, which can be reached from the link given here.  This
+includes lecture slides and recordings, Jupyter notebooks, tutorial
+sheets and solutions, links to Zoom sessions, etc.
+All on-line lectures, question and answer sessions, and tutorial
+session are accessible from this Zoom link, which is shown here.
+</p>
+
+<p>
+Finally, all the main course materials are also available from an
+on-line repository, which can be accessed in the final link shown
+here.  This provides a structured view of the course materials as a
+whole.
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org0d40b5b">
+<h2 id="org0d40b5b">Additional resources</h2>
+<ul>
+<li>Books:
+<ul>
+<li>K. A. Stroud, Engineering Mathematics</li>
+<li>M L Hetland, Beginning Python: From novice to professional</li>
+
+</ul></li>
+
+<li>On-line resources
+<ul>
+<li>LearnChemE: <a href="http://www.learncheme.com/">http://www.learncheme.com/</a></li>
+<li>3Blue1Brown: <a href="https://www.youtube.com/c/3blue1brown">https://www.youtube.com/c/3blue1brown</a></li>
+<li>Professor Leonard: <a href="https://www.youtube.com/c/ProfessorLeonard">https://www.youtube.com/c/ProfessorLeonard</a></li>
+<li>Eddie Woo: <a href="https://www.youtube.com/c/misterwootube">https://www.youtube.com/c/misterwootube</a></li>
+
+</ul></li>
+
+</ul>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+In addition to the materials that you will be provided in the module,
+there are a wealth of resources that you can freely access from the
+library and on the internet.
+</p>
+
+<p>
+A couple of recommended books which are on the reading list are
+Stroud, Engineering Mathematics, which is an excellent text book that
+covers the mathematical material we will use in this module, and
+Hetland, Beginning Python: From novice to professional, which is a
+good reference for learning the basics of Python.
+</p>
+
+<p>
+Some on-line channels that contain videos that you may find helpful,
+are LearnChemE, which provides a bunch of lectures and worked examples
+on various topics in chemical engineering, developed by the University
+of Colorado, and 3Blue1Brown, Professor Leonard, and Eddie Woo, which
+are very nice YouTube channels with lectures on different aspects of
+mathematics.
+</p>
+
+<p>
+These are just a few suggestions.  If you come across any additional
+resources that you find helpful, please share them by posting in the
+class forum on Myplace.
+</p>
+
+</aside>
+
+</section>
+</section>
+<section>
+<section id="slide-org743ed63">
+<h2 id="org743ed63">Questions?</h2>
+<p>
+If you have any questions, please post to the class forum on Myplace
+or email me at leo.lue@strath.ac.uk.
+</p>
+
+<aside class="notes">
+<p>
+
+</p>
+
+<p>
+If you have any questions, please let me know.  You can contact me
+either by posting a message in the class forum on the Myplace site or
+by emailing me directly at leo.lue@strath.ac.uk.
+</p>
+
+<p>
+I hope you enjoy this class, and I look forward to working with you
+this semester.  Thank you.  
+</p>
+
+</aside>
+</section>
+</section>
+</div>
+</div>
+<script src="../../reveal.js-fork/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+width:1200, height:800, rolling_links:true, keyboard:true, overview:true,
+plugins: [ RevealMarkdown, RevealMenu, RevealChalkboard, RevealAudioSlideshow, RevealAudioRecorder]
+});
+
+</script>
+</body>
+</html>
