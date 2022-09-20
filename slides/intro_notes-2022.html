@@ -13,6 +13,17 @@
 
 <link rel="stylesheet" href="../../reveal.js-fork/dist/theme/moon.css" id="theme"/>
 
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal.js-fork/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
@@ -38,23 +49,8 @@
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
 <section>
-<section id="slide-org120f630">
-<h2 id="org120f630">Navigation instructions</h2>
-<ul>
-<li>Press <a class="hide-on-pdf" onclick="document.location =
-  '?print-pdf';" id="PrintButton"><i class="fa fa-print"></i></a> to
-"print" a *.pdf of the presentation.</li>
-<li>Press the <code>SPACE</code> key to progress forward in the presentation.</li>
-<li>Use the <code>UP</code> / <code>DOWN</code> / <code>LEFT</code> / <code>RIGHT</code> arrow keys or the arrows in
-the bottom right corner of the page to navigate the presentation.</li>
-
-</ul>
-
-</section>
-</section>
-<section>
-<section id="slide-orgcc28487">
-<h2 id="orgcc28487">CP213: Applied mathematics and problem solving</h2>
+<section id="slide-org40a574e">
+<h2 id="org40a574e">CP213: Applied mathematics and problem solving</h2>
 <h2>Module overview</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
@@ -80,8 +76,8 @@ of the module aims and contents.
 </section>
 </section>
 <section>
-<section id="slide-org67ff5da">
-<h2 id="org67ff5da">Overview</h2>
+<section id="slide-org9be1fe5">
+<h2 id="org9be1fe5">Overview</h2>
 <ul>
 <li>Module leader: Leo Lue &amp; Abdul Sharif</li>
 <li>Demonstrators: Umair Jamal, Anthony Shek, and Tom Stavert</li>
@@ -159,8 +155,8 @@ course.
 </section>
 </section>
 <section>
-<section id="slide-orgdac9901">
-<h2 id="orgdac9901">Components of assessment</h2>
+<section id="slide-org5f44084">
+<h2 id="org5f44084">Components of assessment</h2>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -234,8 +230,8 @@ latter half of semester 2.
 </section>
 </section>
 <section>
-<section id="slide-orgbc097d1">
-<h2 id="orgbc097d1">Key learning objectives</h2>
+<section id="slide-org19a82aa">
+<h2 id="org19a82aa">Key learning objectives</h2>
 <ul>
 <li>Problem solving</li>
 <li>Mathematics</li>
@@ -304,8 +300,8 @@ solved analytically.
 </section>
 </section>
 <section>
-<section id="slide-orgbe4eb14">
-<h2 id="orgbe4eb14">Balances</h2>
+<section id="slide-orgeb9e940">
+<h2 id="orgeb9e940">Balances</h2>
 <div>
 \begin{align*}
 {\rm accumulation} &= {\rm in~flow} - {\rm out~flow} + {\rm generation}
@@ -338,17 +334,17 @@ and
 </section>
 </section>
 <section>
-<section id="slide-org544c179">
-<h2 id="org544c179">Python programming</h2>
+<section id="slide-orgbb3304a">
+<h2 id="orgbb3304a">Python programming</h2>
 
-<div id="org30edc6d" class="figure">
+<div id="orgbb80886" class="figure">
 <p><img src="./intro/side1half.jpg" alt="side1half.jpg" />
 </p>
 </div>
 
 <div class="column" style="float:left; width:30%">
 
-<div id="orgb681598" class="figure">
+<div id="org0b9be41" class="figure">
 <p><img src="./intro/casio_350_calculator_1512286180_ab688b83.jpg" alt="casio_350_calculator_1512286180_ab688b83.jpg" height="400" />
 </p>
 </div>
@@ -356,7 +352,7 @@ and
 
 <div class="column" style="float:right; width:70%">
 
-<div id="org3574e77" class="figure">
+<div id="org97133f3" class="figure">
 <p><img src="./intro/code_cell.png" alt="code_cell.png" height="400" />
 </p>
 </div>
@@ -383,8 +379,8 @@ and
 </section>
 </section>
 <section>
-<section id="slide-orgd305657">
-<h2 id="orgd305657">Prerequisites</h2>
+<section id="slide-org6dacc57">
+<h2 id="org6dacc57">Prerequisites</h2>
 <ul>
 <li>CP101: Basic Principles in Chemical Engineering</li>
 <li>CP102: Chemical Engineering: Fundamentals, Techniques and Tools</li>
@@ -440,8 +436,8 @@ that you are confident that you understand them thoroughly.
 </section>
 </section>
 <section>
-<section id="slide-orgddb1776">
-<h2 id="orgddb1776">Schedule</h2>
+<section id="slide-org1112841">
+<h2 id="org1112841">Schedule</h2>
 <ul>
 <li>Weeks 1-2: Python and its applications</li>
 <li>Weeks 3-5: Differential balances</li>
@@ -505,8 +501,8 @@ will be held on the Wednesday of week 11.
 </section>
 </section>
 <section>
-<section id="slide-org984677c">
-<h2 id="org984677c">Format</h2>
+<section id="slide-orgf619ff6">
+<h2 id="orgf619ff6">Format</h2>
 <ul>
 <li>tutorial worksheets
 <ul>
@@ -617,8 +613,8 @@ able to use these tools you have developed in your further career.
 </section>
 </section>
 <section>
-<section id="slide-orgdc86661">
-<h2 id="orgdc86661">Useful links</h2>
+<section id="slide-orga7b38a6">
+<h2 id="orga7b38a6">Useful links</h2>
 <ul>
 <li><a href="https://classes.myplace.strath.ac.uk/course/view.php?id=21595">Myplace</a>
 <ul>
@@ -660,8 +656,8 @@ whole.
 </section>
 </section>
 <section>
-<section id="slide-orgcfcbfaa">
-<h2 id="orgcfcbfaa">Additional resources</h2>
+<section id="slide-org0d40b5b">
+<h2 id="org0d40b5b">Additional resources</h2>
 <ul>
 <li>Books:
 <ul>
@@ -720,8 +716,8 @@ class forum on Myplace.
 </section>
 </section>
 <section>
-<section id="slide-orgddf1935">
-<h2 id="orgddf1935">Questions?</h2>
+<section id="slide-org743ed63">
+<h2 id="org743ed63">Questions?</h2>
 <p>
 If you have any questions, please post to the class forum on Myplace
 or email me at leo.lue@strath.ac.uk.
