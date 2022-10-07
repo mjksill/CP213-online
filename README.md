@@ -24,6 +24,10 @@ View on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/m
 ## CP101 tutorials:
 
 - [Tutorial 17, Question 1](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/CP101T17Q1.ipynb)
+- [Tutorial 17, Question 1 alternate solution](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/CP101T17Q1-2.ipynb)
+- [Tutorial 17, Question 2](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/CP101T17Q2.ipynb)
+- [Example 7.5](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/CP101E7.5.ipynb)
+
 
 ## Lecture notebooks
 
