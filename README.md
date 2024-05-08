@@ -19,6 +19,7 @@ View on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/m
 - [Functions in Python](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/python_functions.ipynb)
 - [Symbolic algebra](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/python_sympy.ipynb)
 - [Numerically solving algebraic equations](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/python_solver.ipynb)
+- [Numerically solving ordinary differential equations with `odeint`](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/ode-odeint.ipynb)
 
 
 ## CP101 tutorials:
