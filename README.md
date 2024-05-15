@@ -32,6 +32,8 @@ View on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/m
 
 ## Lecture notebooks
 
+- [lecture: 2023-11-15](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/lecture-20231115.ipynb)
+- [lecture: 2023-11-01](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/lecture_20231101.ipynb)
 - [lecture: 2023-09-27](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/2023-09-27.ipynb)
 - [lecture: 2023-09-22](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/2023-09-22.ipynb)
 - [lecture: 2023-09-20](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/2023-09-20.ipynb)
