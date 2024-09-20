@@ -13,6 +13,17 @@
 
 <link rel="stylesheet" href="../../reveal.js-fork/dist/theme/moon.css" id="theme"/>
 
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = '../../reveal.js-fork/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
@@ -38,8 +49,8 @@
 <script src="../../reveal.js-plugins/audio-slideshow/RecordRTC.js"></script>
 
 <section>
-<section id="slide-orgac3286c">
-<h2 id="orgac3286c">CP213: Applied mathematics and problem solving</h2>
+<section id="slide-org1a6ed78">
+<h2 id="org1a6ed78">CP213: Applied mathematics and problem solving</h2>
 <h2>Module overview</h2>
 <h3>L Lue<br>Department&nbspof&nbspChemical&nbspand&nbspProcess&nbspEngineering<br>University&nbspof&nbspStrathclyde</h3>
 
@@ -65,8 +76,8 @@ of the module aims and contents.
 </section>
 </section>
 <section>
-<section id="slide-orgd8f2af3">
-<h2 id="orgd8f2af3">Overview</h2>
+<section id="slide-org95469f7">
+<h2 id="org95469f7">Overview</h2>
 <ul>
 <li>Module leader: Leo Lue &amp; Abdul Sharif</li>
 <li>Demonstrators: Lucas Nahas Martinez and Thomas Paterson</li>
@@ -148,8 +159,8 @@ course.
 </section>
 </section>
 <section>
-<section id="slide-org6b88247">
-<h2 id="org6b88247">Components of assessment</h2>
+<section id="slide-orgb814c0c">
+<h2 id="orgb814c0c">Components of assessment</h2>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -253,8 +264,8 @@ half of semester 2.
 </section>
 </section>
 <section>
-<section id="slide-org47dfc4f">
-<h2 id="org47dfc4f">Format</h2>
+<section id="slide-org39719ef">
+<h2 id="org39719ef">Format</h2>
 <ul>
 <li>tutorial worksheets
 <ul>
@@ -362,8 +373,8 @@ able to use these tools you have developed in your further career.
 </section>
 </section>
 <section>
-<section id="slide-orgba09c8c">
-<h2 id="orgba09c8c">Prerequisites</h2>
+<section id="slide-org914cd50">
+<h2 id="org914cd50">Prerequisites</h2>
 <ul>
 <li>CP101: Basic Principles in Chemical Engineering</li>
 <li>CP102: Chemical Engineering: Fundamentals, Techniques and Tools</li>
@@ -418,8 +429,8 @@ that you are confident that you understand them thoroughly.
 </section>
 </section>
 <section>
-<section id="slide-orgf5bd7a6">
-<h2 id="orgf5bd7a6">Key learning objectives</h2>
+<section id="slide-org19fc8d5">
+<h2 id="org19fc8d5">Key learning objectives</h2>
 <ul>
 <li>Mathematics</li>
 <li>Using Python</li>
@@ -489,8 +500,8 @@ those tools and interpreting the results.
 </section>
 </section>
 <section>
-<section id="slide-orgc07b38a">
-<h2 id="orgc07b38a">Balances</h2>
+<section id="slide-org765a170">
+<h2 id="org765a170">Balances</h2>
 <div>
 \begin{align*}
 {\rm accumulation} &= {\rm in~flow} - {\rm out~flow} + {\rm generation}
@@ -522,8 +533,8 @@ and
 </section>
 </section>
 <section>
-<section id="slide-org1c65d97">
-<h2 id="org1c65d97">Calculus</h2>
+<section id="slide-orgfa0e50c">
+<h2 id="orgfa0e50c">Calculus</h2>
 <ul>
 <li>differentiation</li>
 <li>integration</li>
@@ -541,8 +552,8 @@ f(b) - f(a)
 
 
 </section>
-<section id="slide-org7f8faee">
-<h3 id="org7f8faee">review question:</h3>
+<section id="slide-orge86b41e">
+<h3 id="orge86b41e">review question:</h3>
 <p>
 Integrate:
 </p>
@@ -556,8 +567,8 @@ I &= \int dx\, x e^{-a x^2}
 
 
 </section>
-<section id="slide-org593deca">
-<h3 id="org593deca">review question:</h3>
+<section id="slide-orgadac684">
+<h3 id="orgadac684">review question:</h3>
 <p>
 Integrate:
 </p>
@@ -574,8 +585,8 @@ I &= \int dx\,x \sin x
 
 
 </section>
-<section id="slide-org15497ce">
-<h3 id="org15497ce">review question:</h3>
+<section id="slide-org6971dae">
+<h3 id="org6971dae">review question:</h3>
 <p>
 Integrate:
 </p>
@@ -591,11 +602,11 @@ I &= \int dx\,x^2 e^{-x} \sin x
 </section>
 </section>
 <section>
-<section id="slide-orgaee7ffe">
-<h2 id="orgaee7ffe">How do you solve problems?</h2>
+<section id="slide-org96e1e73">
+<h2 id="org96e1e73">How do you solve problems?</h2>
 <div>
 
-<div id="orge2baa04" class="figure">
+<div id="orge582d81" class="figure">
 <p><img src="./intro/1726597170885.jpg" alt="1726597170885.jpg" height="500" />
 </p>
 </div>
@@ -604,17 +615,17 @@ I &= \int dx\,x^2 e^{-x} \sin x
 </section>
 </section>
 <section>
-<section id="slide-org06b6fe4">
-<h2 id="org06b6fe4">Python programming</h2>
+<section id="slide-org6b74a3c">
+<h2 id="org6b74a3c">Python programming</h2>
 
-<div id="org28e50a8" class="figure">
+<div id="org3be6f19" class="figure">
 <p><img src="./intro/side1half.jpg" alt="side1half.jpg" />
 </p>
 </div>
 
 <div class="column" style="float:left; width:30%">
 
-<div id="org4cfc846" class="figure">
+<div id="org41b4150" class="figure">
 <p><img src="./intro/casio_350_calculator_1512286180_ab688b83.jpg" alt="casio_350_calculator_1512286180_ab688b83.jpg" height="400" />
 </p>
 </div>
@@ -622,7 +633,7 @@ I &= \int dx\,x^2 e^{-x} \sin x
 
 <div class="column" style="float:right; width:70%">
 
-<div id="org9dbefd1" class="figure">
+<div id="org36ce604" class="figure">
 <p><img src="./intro/code_cell.png" alt="code_cell.png" height="400" />
 </p>
 </div>
@@ -647,8 +658,8 @@ I &= \int dx\,x^2 e^{-x} \sin x
 </aside>
 
 </section>
-<section id="slide-org0ff36ee">
-<h3 id="org0ff36ee">Python as a calculator</h3>
+<section id="slide-org1cb826e">
+<h3 id="org1cb826e">Python as a calculator</h3>
 <p>
 See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=notebooks/python_calculator.ipynb">binder</a> or <a href="https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/python_calculator.ipynb">colab</a>.
 </p>
@@ -670,8 +681,8 @@ See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-onli
 
 
 </section>
-<section id="slide-org0fd061e">
-<h3 id="org0fd061e">Example using variables</h3>
+<section id="slide-org3207984">
+<h3 id="org3207984">Example using variables</h3>
 <div>
 <iframe allow="autoplay; fullscreen" height="500" width="1120" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29111&amp;code=cD~cHPkoDRjmze5AKdfGOIjDPWQ7Rny" frameborder="0" allowfullscreen></iframe>
 <!---iframe width="560" height="315" src="https://www.youtube.com/embed/16Yaz4oIkhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe--->
@@ -686,13 +697,13 @@ See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-onli
 
 
 </section>
-<section id="slide-org894d041">
-<h3 id="org894d041">Variables: Numbers and strings</h3>
+<section id="slide-orgaf7c328">
+<h3 id="orgaf7c328">Variables: Numbers and strings</h3>
 <iframe allow="autoplay; fullscreen" height="500" width="500" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29216&amp;code=d5~ijLchTEOwGJMFWGf7RFQxZ9ZBPq8" frameborder="0" allowfullscreen></iframe>
 
 </section>
-<section id="slide-orgd25aff2">
-<h3 id="orgd25aff2">Variables: Lists</h3>
+<section id="slide-org337fb71">
+<h3 id="org337fb71">Variables: Lists</h3>
 <iframe allow="autoplay; fullscreen" height="500" width="1120" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29236&amp;code=cL~mfgCUbBNSZdDeCdWGhFAybiLyywg" frameborder="0" allowfullscreen></iframe>
 
 <p>
@@ -700,15 +711,15 @@ See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-onli
 </p>
 
 </section>
-<section id="slide-org2551462">
-<h3 id="org2551462">Variables: Dictionaries</h3>
+<section id="slide-orgbaf3168">
+<h3 id="orgbaf3168">Variables: Dictionaries</h3>
 <iframe allow="autoplay; fullscreen" height="500" width="500" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29339&amp;code=de~TDs6xrAtA4CCHNgzdMWVeqbpLI9b" frameborder="0" allowfullscreen></iframe>
 
 
 
 </section>
-<section id="slide-orga60fbb4">
-<h3 id="orga60fbb4">Example using dictionaries</h3>
+<section id="slide-orgd063c7c">
+<h3 id="orgd063c7c">Example using dictionaries</h3>
 <iframe allow="autoplay; fullscreen" height="500" width="500" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=29221&amp;code=ct~RXSPpeK9MhrYbicpud7Bk9fTexcM" frameborder="0" allowfullscreen></iframe>
 
 <p>
@@ -716,24 +727,23 @@ See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-onli
 </p>
 
 </section>
-<section id="slide-org2a6567c">
-<h3 id="org2a6567c">More advanced use of dictionaries</h3>
+<section id="slide-orga446633">
+<h3 id="orga446633">More advanced use of dictionaries</h3>
 <iframe allow="autoplay; fullscreen" height="500" width="500" src="https://ls-video2.ces.strath.ac.uk/Embed.aspx?id=31008&amp;code=cT~vNz0yrmdyodcJPeOFPCWsuvO7OEQ" frameborder="0" allowfullscreen></iframe>
 
 
 </section>
 </section>
 <section>
-<section id="slide-org815a1e2">
-<h2 id="org815a1e2">Overimitation</h2>
+<section id="slide-orgb251333">
+<h2 id="orgb251333">Overimitation</h2>
 <div>
 
-<div id="org4f7235c" class="figure">
-<p><img src="./intro/6096_web.jpg" alt="6096_web.jpg" height="400" />
+<div id="orgeb22276" class="figure">
+<p><img src="./intro/6096_web.jpg" alt="6096_web.jpg" height="600" />
 </p>
 </div>
 </div>
-
 
 <aside class="notes">
 <p>
@@ -750,8 +760,11 @@ See the Jupyter notebook: <a href="https://mybinder.org/v2/gh/mjksill/CP213-onli
 </section>
 </section>
 <section>
-<section id="slide-org4fc38af">
-<h2 id="org4fc38af">Why is mathematics useful?</h2>
+<section id="slide-org727edf0">
+<h2 id="org727edf0">Is mathematics useful?</h2>
+<img src="./intro/notebook1-rotate.png" height=600>
+
+
 <aside class="notes">
 <p>
 One of the key aspects of mathematics, and the reason why it is so
@@ -811,11 +824,11 @@ at a higher, more abstract level.
 </section>
 </section>
 <section>
-<section id="slide-orga13a859">
-<h2 id="orga13a859">Large Language Models and AI</h2>
+<section id="slide-org98d831e">
+<h2 id="org98d831e">Large Language Models and AI</h2>
 <div>
 
-<div id="org826598c" class="figure">
+<div id="org9a1ada6" class="figure">
 <p><img src="./intro/LLM.png" alt="LLM.png" height="600" />
 </p>
 </div>
@@ -841,8 +854,8 @@ communication
 </section>
 </section>
 <section>
-<section id="slide-orgbf838b9">
-<h2 id="orgbf838b9">Schedule for semester 1</h2>
+<section id="slide-org733c374">
+<h2 id="org733c374">Schedule for semester 1</h2>
 <ul>
 <li>Weeks 1-2: Python and its applications</li>
 <li>Weeks 3-5: Differential balances</li>
@@ -906,8 +919,8 @@ will be held on the Wednesday of week 11.
 </section>
 </section>
 <section>
-<section id="slide-org8a938fc">
-<h2 id="org8a938fc">Useful links</h2>
+<section id="slide-orgabcf0b6">
+<h2 id="orgabcf0b6">Useful links</h2>
 <ul>
 <li><a href="https://classes.myplace.strath.ac.uk/course/view.php?id=21595">Myplace</a>
 <ul>
@@ -957,8 +970,8 @@ whole.
 </section>
 </section>
 <section>
-<section id="slide-orga2cc1a1">
-<h2 id="orga2cc1a1">Additional resources</h2>
+<section id="slide-org5c3f4a7">
+<h2 id="org5c3f4a7">Additional resources</h2>
 <ul>
 <li>Books:
 <ul>
@@ -1023,8 +1036,8 @@ class forum on Myplace.
 </section>
 </section>
 <section>
-<section id="slide-org62f71ca">
-<h2 id="org62f71ca">Questions?</h2>
+<section id="slide-orga24cd89">
+<h2 id="orga24cd89">Questions?</h2>
 <p>
 If you have any questions, please post to the class forum on Myplace
 or email me at leo.lue@strath.ac.uk.
