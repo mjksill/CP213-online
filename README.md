@@ -19,6 +19,8 @@ View on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/m
 - [Functions in Python](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/python_functions.ipynb)
 - [Symbolic algebra](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/python_sympy.ipynb)
 - [Numerically solving algebraic equations](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/python_solver.ipynb)
+- [Numerically solving ordinary differential equations with `odeint`](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/ode-odeint.ipynb)
+- [Linear regression](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/fit_line.ipynb)
 
 
 ## CP101 tutorials:
@@ -31,7 +33,19 @@ View on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/m
 
 ## Lecture notebooks
 
+- [lecture: 2023-11-15](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/lecture-20231115.ipynb)
+- [lecture: 2023-11-01](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/lecture_20231101.ipynb)
+- [lecture: 2023-09-27](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/2023-09-27.ipynb)
+- [lecture: 2023-09-22](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/2023-09-22.ipynb)
+- [lecture: 2023-09-20](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/2023-09-20.ipynb)
+- [lecture: 2022-11-23](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/2022-11-23.ipynb)
+- [lecture: 2022-10-28](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/2022-10-28.ipynb)
+- [lecture: 2022-10-14](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/2022-10-14.ipynb)
 - [lecture: 2022-09-30](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/2022-09-30.ipynb)
-
-
+- [lecture: 2022-09-23](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/2022-09-23.ipynb)
+- [lecture: 2021-11-19](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/2022-11-19.ipynb)
+- [lecture: 2021-11-16](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/2022-11-16.ipynb)
+- [lecture: 2022-09-23](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/2022-09-23.ipynb)
+- [lecture: 2020-09-24](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/2020-09-24.ipynb)
+- [lecture: 2020-09-21](https://colab.research.google.com/github/mjksill/CP213-online/blob/master/notebooks/2020-09-21.ipynb)
 
