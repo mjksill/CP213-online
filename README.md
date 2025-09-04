@@ -1,5 +1,6 @@
 # Welcome to the CP213 on-line resource page
 
+[Introduction slides](https://mjksill.github.io/CP213-online/slides/intro_notes-2024.html)
 
 View on [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mjksill/CP213-online.git/master?filepath=index.ipynb)  This may take some time to load.
 
